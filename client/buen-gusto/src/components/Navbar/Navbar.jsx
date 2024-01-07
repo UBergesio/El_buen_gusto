@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className={`navbar navbar-expand-lg ${style.background}`}>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand text-light" href="#">
             LOGO
           </a>
           <p className={style.titulo}>El Buen Gusto</p>
@@ -23,23 +23,27 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                >
                   Nosotros
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item ">
+                <a class="nav-link text-light" href="#">
                   Galeria
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link text-light" href="#">
                   Contacto
                 </a>
               </li>
               <li class="nav-item dropdown" className={style.disntacias}>
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -47,19 +51,19 @@ const Navbar = () => {
                 >
                   Servicios
                 </a>
-                <ul class="dropdown-menu">
+                <ul className={`dropdown-menu ${style.background}`}>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item text-light" href="#">
                       Catering empresarial
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item text-light" href="#">
                       Bodas
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item text-light" href="#">
                       Cumpleaños
                     </a>
                   </li>

@@ -1,9 +1,14 @@
-import style from "./Navbar.module.css"
+import { useMediaQuery } from "@react-hook/media-query";
+import style from "./Navbar.module.css";
 
 const Navbar = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg ${style.background}`}>
+      <nav
+        className={`navbar navbar-expand-lg ${style.background}`}
+      >
         <div className="container-fluid">
           <a className="navbar-brand text-light" href="#">
             <img
@@ -12,9 +17,14 @@ const Navbar = () => {
               alt="Logo"
             />
           </a>
-          <p className={style.titulo}>
-            <b>El Buen Gusto</b>
-          </p>
+          <div>
+            {isDesktop ? null : (
+              <p className={style.titulo}>
+                <b>El Buen Gusto</b>
+              </p>
+            )}
+          </div>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -30,34 +40,45 @@ const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a
-                  className="nav-link active text-light"
+                  className={`nav-link active text-light ${style.text}`}
                   aria-current="page"
                   href="#"
                 >
-                  Nosotros
+                  <b>Nosotros</b>
                 </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link text-light" href="#">
-                  Galeria
+                <a
+                  className={`nav-link active text-light ${style.text}`}
+                  href="#"
+                >
+                  <b>Galeria</b>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#">
-                  Contacto
+                <a
+                  className={`nav-link active text-light ${style.text}`}
+                  href="#"
+                >
+                  <b>Contacto</b>
                 </a>
               </li>
-              <li
-                className={`nav-item dropdown ${style.disntacias}`}
-              >
+              <div>
+                {isDesktop ? (
+                  <p className={style.titulo}>
+                    <b>El Buen Gusto</b>
+                  </p>
+                ) : null}
+              </div>
+              <li className={`nav-item dropdown ${style.disntacias}`}>
                 <a
-                  className="nav-link dropdown-toggle text-light"
+                  className={`nav-link dropdown-toggle text-light ${style.text}`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Servicios
+                  <b>Servicios</b>
                 </a>
                 <ul className={`dropdown-menu ${style.background}`}>
                   <li>
@@ -83,6 +104,6 @@ const Navbar = () => {
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;

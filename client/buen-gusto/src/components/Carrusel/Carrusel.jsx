@@ -36,7 +36,7 @@ const Carrusel = () => {
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Primera imagen</h5>
+            <h3>Primera imagen</h3>
             <p>primera descripcion.</p>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Carrusel = () => {
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Segunda imagen</h5>
+            <h3>Segunda imagen</h3>
             <p>Segunda Descripcion.</p>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Carrusel = () => {
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Tercer imagen</h5>
+            <h3>Tercer imagen</h3>
             <p>Tercer descripcion.</p>
           </div>
         </div>

@@ -12,22 +12,22 @@
 }
 
 .titulo {
-
-  right: 0;
-  left: 0;
   margin-top: 0.8em;
+  margin-left: 7.5em;
   font-family: "Great Vibes", cursive;
   font-size: 2em;
-  color: rgb(156, 11, 11);
+  color: rgb(177, 0, 0);
 }
 
 .text {
+  margin-top: 1.6em;
   color: white;
 }
 
 .background {
   background-color: black;
-  height: auto;
+  margin-top: -1.4em;
+  margin-bottom: -1.4em;
 }
 
 .logo {
@@ -36,16 +36,36 @@
   margin-right: 0.5em;
 }
 
-/* @media (max-width: 767px) {
-  .background {
-    height: 2.8em;
-  }
+@media (max-width: 767px) {
   .titulo {
     padding-bottom: 0.5em;
-    position: fixed;
+    position: relative;
+    height: 0.9em;
+    margin-top: -0.04em;
+    margin-left: -1em;
   }
+  .background {
+  background-color: black;
+  margin-top: 0.0em;
+  margin-bottom: auto;
+}
   .logo {
     margin-top: -1em;
   }
+  .disntacias{
+    position: relative;
+    padding-left: 6.5em;
+  }
+  .text{
+    margin-top: -0.5em;
+  }
 }
- */
+
+.logo:hover {
+  cursor: pointer; /* Cambia esto al color que prefieras */
+}
+
+
+.text:hover{
+  cursor: pointer;
+}

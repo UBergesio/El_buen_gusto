@@ -4,13 +4,19 @@ const Navbar = () => {
   return (
     <div>
       <nav className={`navbar navbar-expand-lg ${style.background}`}>
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">
-            LOGO
+        <div className="container-fluid">
+          <a className="navbar-brand text-light" href="#">
+            <img
+              className={style.logo}
+              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
+              alt="Logo"
+            />
           </a>
-          <p className={style.titulo}>El Buen Gusto</p>
+          <p className={style.titulo}>
+            <b>El Buen Gusto</b>
+          </p>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -18,32 +24,34 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
                 <a
-                  class="nav-link active text-light"
+                  className="nav-link active text-light"
                   aria-current="page"
                   href="#"
                 >
                   Nosotros
                 </a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link text-light" href="#">
+              <li className="nav-item ">
+                <a className="nav-link text-light" href="#">
                   Galeria
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#">
                   Contacto
                 </a>
               </li>
-              <li class="nav-item dropdown" className={style.disntacias}>
+              <li
+                className={`nav-item dropdown ${style.disntacias}`}
+              >
                 <a
-                  class="nav-link dropdown-toggle text-light"
+                  className="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -53,17 +61,17 @@ const Navbar = () => {
                 </a>
                 <ul className={`dropdown-menu ${style.background}`}>
                   <li>
-                    <a class="dropdown-item text-light" href="#">
+                    <a className="dropdown-item text-light" href="#">
                       Catering empresarial
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item text-light" href="#">
+                    <a className="dropdown-item text-light" href="#">
                       Bodas
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item text-light" href="#">
+                    <a className="dropdown-item text-light" href="#">
                       Cumpleaños
                     </a>
                   </li>

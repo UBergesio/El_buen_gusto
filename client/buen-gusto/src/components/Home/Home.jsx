@@ -1,4 +1,5 @@
 import Carrusel from "../Carrusel/Carrusel";
+import ContactForm from "../ContactForm/ContactForm";
 import Nosotros from "../Nosotros/Nosotros";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Carrusel />
       <Nosotros/>
+      <ContactForm />
     </div>
   )
 }

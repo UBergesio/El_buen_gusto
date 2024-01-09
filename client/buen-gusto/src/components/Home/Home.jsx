@@ -1,9 +1,11 @@
 import Carrusel from "../Carrusel/Carrusel";
+import Nosotros from "../Nosotros/Nosotros";
 
 const Home = () => {
   return (
     <div>
-      <Carrusel/>
+      <Carrusel />
+      <Nosotros/>
     </div>
   )
 }

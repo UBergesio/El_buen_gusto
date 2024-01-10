@@ -80,17 +80,17 @@ const Navbar = () => {
                 </a>
                 <ul className={`dropdown-menu ${style.background}`}>
                   <li>
-                    <a className="dropdown-item text-light" href="#">
+                    <a className={`dropdown-item text-light ${style.customDropdownItem}`} href="#">
                       Bodas
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-light" href="#">
+                    <a className={`dropdown-item text-light ${style.customDropdownItem}`} href="#">
                       Eventos Corporativos
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-light" href="#">
+                    <a className={`dropdown-item text-light ${style.customDropdownItem}`} href="#">
                       Fiestas Privadas
                     </a>
                   </li>

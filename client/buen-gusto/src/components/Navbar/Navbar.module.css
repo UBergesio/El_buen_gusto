@@ -72,3 +72,8 @@ margin-bottom: -1.4em;
   margin-left: 1em;
   width: 100%;
 }
+
+.customDropdownItem:hover {
+  /* Set the desired text color for the dropdown items on hover */
+  background-color: rgb(177, 0, 0); /* Your desired hover color here */;
+}

@@ -1,5 +1,6 @@
 import style from "./Nosotros.module.css";
 import { useMediaQuery } from "@react-hook/media-query";
+import nosotros from "../../utils/img/nosotros/nosotros.json";
 
 const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -7,10 +8,9 @@ const Nosotros = () => {
   return (
     <div className={` text-center bg-black ${style.container}`}>
       {isDesktop ? (
+        /*  Pantalla Grande */
+
         <div className="row">
-          {/*         <h1>
-          <b>Nosotros</b>
-        </h1> */}
           <h3 className={style.subTitulo}>
             Mas de 20 años agasajando.{" "}
             <img
@@ -46,18 +46,61 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="col">
-            <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1695850005/sample.jpg"
-              alt="una imagen"
-              className="img-thumbnail"
-            />
+            {/* Carrusel pantalla grande */}
+
+            <div
+              id="carouselExampleInterval"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                {nosotros.map((item, index) => (
+                  <div
+                    key={index} // Asegúrate de incluir una clave única para cada elemento
+                    className={
+                      index === 0 ? "carousel-item active" : "carousel-item"
+                    }
+                    data-bs-interval="3000"
+                  >
+                    <img
+                      src={item.img}
+                      className="d-block w-100 img-thumbnail"
+                      alt="..."
+                    />
+                  </div>
+                ))}
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       ) : (
+        /* Pantalla Chica */
+
         <div className="row row-cols-1">
-          {/*         <h1>
-          <b>Nosotros</b>
-        </h1> */}
           <h3 className={style.subTitulo}>Mas de 20 años agasajando. </h3>
           <img
             className={style.logo}
@@ -87,11 +130,54 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="col">
-            <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1695850005/sample.jpg"
-              alt="una imagen"
-              className="img-thumbnail"
-            />
+            {/* Carrucel pantalla chica */}
+            <div
+              id="carouselExampleInterval"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                {nosotros.map((item, index) => (
+                  <div
+                    key={index} // Asegúrate de incluir una clave única para cada elemento
+                    className={
+                      index === 0 ? "carousel-item active" : "carousel-item"
+                    }
+                    data-bs-interval="3000"
+                  >
+                    <img
+                      src={item.img}
+                      className="d-block w-100 img-thumbnail"
+                      alt="..."
+                    />
+                  </div>
+                ))}
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       )}

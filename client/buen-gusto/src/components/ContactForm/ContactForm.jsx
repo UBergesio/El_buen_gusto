@@ -10,10 +10,14 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_q9brlnk",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+        /*"service_q9brlnk",
         "template_pvr6j1a",
         form.current,
-        "CJk9MtQU_4io8Tfib"
+        "CJk9MtQU_4io8Tfib"*/
       )
       .then(
         (result) => {
@@ -26,18 +30,19 @@ const ContactForm = () => {
     
   };
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <div className="form-group">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email" name="from_name" />
-        <small id="emailHelp" className="form-text text-muted">Ingrese un email con el siguiente formato: ejemplo@ejemplo.com.</small>
-      </div>
-      <div className="form-group">
-        <label for="exampleInputPassword1">Mensaje</label>
-        <input type="text" className="form-control" name="message" placeholder="Mensaje" />
-      <button type="submit" className="btn btn-primary">Contactar</button>
-      </div>
-    </form>
+    <div className="container-sm m-3 p-5">
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="input-group mb-3">
+          <label class="input-group-text" for="exampleInputEmail1">Email</label>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.com" name="from_name" required />
+        </div>
+        <div className="input-group mb-3">
+          <label class="input-group-text" for="exampleInputPassword1">Mensaje</label>
+          <input type="text" className="form-control" name="message" placeholder="Mensaje" />
+        </div>
+        <button type="submit" className="btn btn-primary">Contactar</button>
+      </form>
+    </div>
   );
  }
 export default ContactForm;

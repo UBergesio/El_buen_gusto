@@ -35,30 +35,42 @@ const ContactForm = () => {
         
         <div className='col-lg-7 col-md-12'>
           <h2 className="text-light">¿Querés contactarnos?</h2>
-          <form ref={form} onSubmit={sendEmail} >
-            <div className="col-auto">
-              <label class="visually-hidden" for="name">Nombre</label>
-              <input type="text" className="form-control" id="name" placeholder="Nombre" name="from_name" required />
+          <form ref={form} onSubmit={sendEmail} className="row g-1">
+            <div className="col-12">
+              <label class="visually-hidden" for="name">Nombre y Apellido</label>
+              <input type="text" className={`form-control shadow-none ${style.inputborder}`} id="name" placeholder="Nombre y Apellido*" name="from_name" required />
             </div>
-            <div className="col-auto">
-              <label class="visually-hidden" for="last-name">Apellido</label>
-              <input type="text" className="form-control" id="last-name" placeholder="Apellido" name="from_lastname" />
+
+            <div className="col-md-6">
+              <input type="text" className={`form-control shadow-none ${style.inputborder}`} id="last-name" placeholder="Teléfono*" name="phone" required/>
             </div>
-            <div className="col-auto">
-              <label class="text-center" for="date">Fecha aprox del evento</label>
+            
+            <div className="col-md-6">
+              <input type="email" className={`form-control shadow-none ${style.inputborder}`} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*" name="from_email" required />
             </div>
-            <div className="col-auto">
-              <input type="text" className="form-control" id="date" placeholder="Fecha aprox. del evento" name="date" />
+           
+            <div className="col-md-6">
+              <select className={`form-control shadow-none ${style.inputborder}`} id="tiposervicio"  name="tipo_servicio"> 
+                <option className={style.option} value="No seleccionó">Tipo de Servicio</option>
+                <option className={style.option} value="Boda">Bodas</option>
+                <option className={style.option} value="Evento Corporativo">Evento Corporativo</option>
+                <option className={style.option} value="Fiesta privada">Evento social</option>
+              </select>
             </div>
-            <div className="col-auto">
-              <label class="visually-hidden" for="exampleInputEmail1">Email</label>
-              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.com" name="from_email" required />
+
+            <div className="col-md-6">
+              <input type="text" className={`form-control shadow-none ${style.inputborder}`} id="lugar" placeholder="Lugar" name="place" required />
             </div>
-            <div className="input-group mb-3">
-              <label class="input-group-text" for="exampleInputPassword1">Mensaje</label>
-              <input type="text" className="form-control" name="message" placeholder="Mensaje" />
+
+            <div className="input-group md-3"> 
+              <label class="input-group-text bg-secondary" for="fecha">Fecha aproximada del evento</label>
+              <input type="date" className={`form-control shadow-none ${style.inputborder}`} id="fecha" name="date" />
             </div>
-            <button type="submit" className="btn btn-primary">Contactar</button>
+
+            <div className="col-12">
+              <textarea className={`form-control shadow-none ${style.inputborder}`} id="mensaje" placeholder="Mensaje" name="message" required></textarea>
+            </div>
+            <button type="submit" className="btn btn-danger">Contactar</button>
           </form>
         </div>
 

@@ -12,4 +12,19 @@
     font-family: "Great Vibes", cursive;
     font-size: 2em;
     color: rgb(177, 0, 0);
-  }
+}
+.inputborder {
+  border:0px solid black;
+  opacity: 0.75;
+}
+.inputborder:focus {
+  border:1.5px solid rgb(177, 0, 0);
+  outline: none;
+}
+
+.option{
+  color: black;
+}
+.option:hover {
+  background-color: rgb(177, 0, 0);
+}

@@ -6,9 +6,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav
-        className={`navbar navbar-expand-lg ${style.background}`}
-      >
+      <nav className={`navbar navbar-expand-lg ${style.background}`}>
         <div className="container-fluid">
           <a className="navbar-brand text-light" href="#">
             <img
@@ -42,7 +40,7 @@ const Navbar = () => {
                 <a
                   className={`nav-link active text-light ${style.text}`}
                   aria-current="page"
-                  href="#"
+                  href="#nosotros"
                 >
                   <b>Nosotros</b>
                 </a>
@@ -58,7 +56,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className={`nav-link active text-light ${style.text}`}
-                  href="#"
+                  href="#contacto"
                 >
                   <b>Contacto</b>
                 </a>
@@ -83,17 +81,17 @@ const Navbar = () => {
                 <ul className={`dropdown-menu ${style.background}`}>
                   <li>
                     <a className="dropdown-item text-light" href="#">
-                      Catering empresarial
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item text-light" href="#">
                       Bodas
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item text-light" href="#">
-                      Cumpleaños
+                      Eventos Corporativos
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item text-light" href="#">
+                      Fiestas Privadas
                     </a>
                   </li>
                 </ul>

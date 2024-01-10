@@ -6,7 +6,8 @@ const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={` text-center bg-black ${style.container}`}>
+    <div className={` text-center bg-black ${style.container}`}
+    id="nosotros">
       {isDesktop ? (
         /*  Pantalla Grande */
 
@@ -45,7 +46,7 @@ const Nosotros = () => {
               exito desde el primer hasta el ultimo detalle.
             </p>
           </div>
-          <div className="col">
+          <div className="col shadow">
             {/* Carrusel pantalla grande */}
 
             <div
@@ -64,7 +65,7 @@ const Nosotros = () => {
                   >
                     <img
                       src={item.img}
-                      className="d-block w-100 img-thumbnail"
+                      className="d-block w-100 rounded"
                       alt="..."
                     />
                   </div>
@@ -107,7 +108,7 @@ const Nosotros = () => {
             src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
             alt="Logo"
           />
-          <div className="col">
+          <div className="col ">
             <h4 className={style.titulo}>
               Desde <span className={style.buenGusto}>"El buen Gusto"</span>{" "}
               sabemos que cada evento es <b>unico y especial.</b>
@@ -129,7 +130,7 @@ const Nosotros = () => {
               exito desde el primer hasta el ultimo detalle.
             </p>
           </div>
-          <div className="col">
+          <div className="col shadow">
             {/* Carrucel pantalla chica */}
             <div
               id="carouselExampleInterval"
@@ -147,7 +148,7 @@ const Nosotros = () => {
                   >
                     <img
                       src={item.img}
-                      className="d-block w-100 img-thumbnail"
+                      className="d-block w-100 border bg-dark"
                       alt="..."
                     />
                   </div>

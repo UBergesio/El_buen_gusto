@@ -1,21 +1,21 @@
-.tamanioCarrusel{
+.tamanioCarrusel {
   width: 100%;
   margin: auto;
 }
 
 /* Estilos por defecto para el texto */
 .text-auto {
-  color: black;  /* Color de texto predeterminado (puede ser negro o cualquier color que prefieras) */
+  color: black; /* Color de texto predeterminado (puede ser negro o cualquier color que prefieras) */
 }
 
 /* Cambia el color del texto cuando el fondo es oscuro */
 .bg-dark .text-auto,
 .bg-primary .text-auto {
-  color: white;  /* Color de texto para fondos oscuros (puede ser blanco o cualquier otro color que prefieras) */
+  color: white; /* Color de texto para fondos oscuros (puede ser blanco o cualquier otro color que prefieras) */
 }
 
 /* Cambia el color del texto cuando el fondo es claro */
 .bg-light .text-auto,
 .bg-secondary .text-auto {
-  color: black;  /* Color de texto para fondos claros (puede ser negro o cualquier otro color que prefieras) */
+  color: black; /* Color de texto para fondos claros (puede ser negro o cualquier otro color que prefieras) */
 }

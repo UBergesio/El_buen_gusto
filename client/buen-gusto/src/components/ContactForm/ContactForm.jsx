@@ -30,7 +30,7 @@ const ContactForm = () => {
     
   };
   return (
-    <div className="container-sm m-3 p-5">
+    <div className="container-sm m-3 p-5" id="contacto">
       <form ref={form} onSubmit={sendEmail}>
         <div className="input-group mb-3">
           <label class="input-group-text" for="exampleInputEmail1">Email</label>

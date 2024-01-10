@@ -1,15 +1,17 @@
-import style from "./Carrusel.module.css"
+import style from "./Carrusel.module.css";
+import HomeCarru from "../../utils/img/HomeCarru/HomeCarru.json";
 
 const Carrusel = () => {
   return (
     <div
       id="carouselExampleCaptions"
-      className={`carousel slide ${style.tamanioCarrusel}`}
+      className={`carousel slide carousel-fade ${style.tamanioCarrusel}`}
+      data-bs-ride="carousel"
     >
       <div className="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleCaptions "
           data-bs-slide-to="0"
           className="active"
           aria-current="true"
@@ -28,40 +30,24 @@ const Carrusel = () => {
           aria-label="Slide 3"
         ></button>
       </div>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img
-            src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1695850045/cld-sample-3.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
-          <div className="carousel-caption d-none d-md-block">
-            <h3>Primera imagen</h3>
-            <p>primera descripcion.</p>
+      <div className="carousel-inner ">
+        {HomeCarru.map((item, index) => (
+          <div
+            key={index}
+            className={index === 0 ? "carousel-item active" : "carousel-item"}
+            data-bs-interval="8000"
+          >
+            <img
+              src={item.img}
+              className="d-block w-100"
+              alt="..."
+            />
+            <div className="carousel-caption d-none d-md-block">
+              <h3>{item.titulo}</h3>
+              <p>{item.subTitulo}</p>
+            </div>
           </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1695850044/cld-sample-2.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
-          <div className="carousel-caption d-none d-md-block">
-            <h3>Segunda imagen</h3>
-            <p>Segunda Descripcion.</p>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1695850045/cld-sample-4.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
-          <div className="carousel-caption d-none d-md-block">
-            <h3>Tercer imagen</h3>
-            <p>Tercer descripcion.</p>
-          </div>
-        </div>
+        ))}
       </div>
       <button
         className="carousel-control-prev"
@@ -83,5 +69,5 @@ const Carrusel = () => {
       </button>
     </div>
   );
- }
+};
 export default Carrusel;

@@ -26,7 +26,7 @@
 
 .background {
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);  margin-top: -1.4em;
-  margin-bottom: -1.4em;
+margin-bottom: -1.4em;
 }
 
 .logo {
@@ -61,10 +61,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(
 }
 
 .logo:hover {
-  cursor: pointer; /* Cambia esto al color que prefieras */
+  cursor: pointer;
 }
 
 
 .text:hover{
   cursor: pointer;
+}
+.textCaja{
+  margin-left: 1em;
+  width: 100%;
 }

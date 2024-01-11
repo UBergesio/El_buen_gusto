@@ -10,17 +10,18 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
+        /*process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-        /*"service_q9brlnk",
+        process.env.REACT_APP_PUBLIC_KEY*/
+        "service_q9brlnk",
         "template_pvr6j1a",
         form.current,
-        "CJk9MtQU_4io8Tfib"*/
+        "CJk9MtQU_4io8Tfib"
       )
       .then(
         (result) => {
+          alert(result.text);
           console.log(result.text);
         },
         (error) => {
@@ -59,7 +60,7 @@ const ContactForm = () => {
             </div>
 
             <div className="col-md-6">
-              <input type="text" className={`form-control shadow-none ${style.inputborder}`} id="lugar" placeholder="Lugar" name="place" required />
+              <input type="text" className={`form-control shadow-none ${style.inputborder}`} id="lugar" placeholder="Lugar" name="place" />
             </div>
 
             <div className="input-group md-3"> 

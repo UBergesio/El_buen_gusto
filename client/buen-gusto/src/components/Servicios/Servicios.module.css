@@ -1,0 +1,17 @@
+.container{
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);
+
+}
+
+h1{
+    color: rgb(177, 0, 0);
+  font-family: "Great Vibes", cursive;
+
+}
+
+p{
+    /* color: rgb(102, 52, 52); */
+  color: white;
+
+}
+

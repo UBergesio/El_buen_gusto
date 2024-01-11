@@ -91,7 +91,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a className={`dropdown-item text-light ${style.customDropdownItem}`} href="#">
-                      Fiestas Privadas
+                      Eventos Sociales
                     </a>
                   </li>
                 </ul>

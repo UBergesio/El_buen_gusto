@@ -39,7 +39,7 @@ const Carrusel = () => {
           >
             <img
               src={item.img}
-              className="d-block w-100"
+              className={`d-block w-100 border-bottom border-2 border-black ${style.img}`}
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">

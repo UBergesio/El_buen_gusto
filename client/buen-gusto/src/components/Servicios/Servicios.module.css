@@ -1,17 +1,30 @@
-.container{
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);
-
+.container {
+  position: relative;
+  padding: 2em;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(31, 31, 31) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 3;
+  box-shadow: 2px 4px 10px 6px rgb(0, 0, 0);
 }
 
-h1{
-    color: rgb(177, 0, 0);
+.h1 {
+  color: rgb(177, 0, 0);
   font-family: "Great Vibes", cursive;
-
 }
 
-p{
-    /* color: rgb(102, 52, 52); */
+.p {
+  /* color: rgb(102, 52, 52); */
+  color: rgb(199, 195, 195);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500
+}
+
+.h2 {
+  font-size: 4em;
+  font-family: "Great Vibes", cursive;
   color: white;
-
 }
-

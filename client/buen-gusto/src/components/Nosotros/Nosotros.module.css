@@ -2,6 +2,8 @@
 .titulo{
   color: rgb(102, 52, 52);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Montserrat', sans-serif;
+
 }
 .subTitulo {
   font-family: "Great Vibes", cursive;
@@ -18,6 +20,7 @@
 }
 
 .texto{
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.08em;
   color: rgb(102, 52, 52);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

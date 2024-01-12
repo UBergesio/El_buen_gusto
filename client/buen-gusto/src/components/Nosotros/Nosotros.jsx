@@ -6,8 +6,7 @@ const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={` text-center bg-black ${style.container}`}
-    id="nosotros">
+    <div className={` text-center bg-black ${style.container}`} id="nosotros">
       {isDesktop ? (
         /*  Pantalla Grande */
 
@@ -57,7 +56,7 @@ const Nosotros = () => {
               <div className="carousel-inner">
                 {nosotros.map((item, index) => (
                   <div
-                    key={index} // Asegúrate de incluir una clave única para cada elemento
+                    key={index}
                     className={
                       index === 0 ? "carousel-item active" : "carousel-item"
                     }
@@ -65,7 +64,7 @@ const Nosotros = () => {
                   >
                     <img
                       src={item.img}
-                      className="d-block w-100 rounded"
+                      className="d-block w-100 rounded border border-2 border-black"
                       alt="..."
                     />
                   </div>

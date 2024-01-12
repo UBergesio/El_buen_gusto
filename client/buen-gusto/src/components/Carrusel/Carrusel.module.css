@@ -1,21 +1,11 @@
 .tamanioCarrusel {
   width: 100%;
   margin: auto;
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);  
 }
 
-/* Estilos por defecto para el texto */
-.text-auto {
-  color: black; /* Color de texto predeterminado (puede ser negro o cualquier color que prefieras) */
-}
-
-/* Cambia el color del texto cuando el fondo es oscuro */
-.bg-dark .text-auto,
-.bg-primary .text-auto {
-  color: white; /* Color de texto para fondos oscuros (puede ser blanco o cualquier otro color que prefieras) */
-}
-
-/* Cambia el color del texto cuando el fondo es claro */
-.bg-light .text-auto,
-.bg-secondary .text-auto {
-  color: black; /* Color de texto para fondos claros (puede ser negro o cualquier otro color que prefieras) */
+.img{
+  border-bottom-left-radius:50% 100px;
+  border-bottom-right-radius: 50% 100px;
+z-index: 2;
 }

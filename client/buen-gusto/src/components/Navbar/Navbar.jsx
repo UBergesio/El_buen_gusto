@@ -45,6 +45,14 @@ const Navbar = () => {
                   <b>Nosotros</b>
                 </a>
               </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link active text-light ${style.text}`}
+                  href="#valores"
+                >
+                  <b>Valores</b>
+                </a>
+              </li>
               <li className="nav-item ">
                 <a
                   className={`nav-link active text-light ${style.text}`}

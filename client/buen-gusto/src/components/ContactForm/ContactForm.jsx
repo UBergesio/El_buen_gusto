@@ -55,7 +55,8 @@ const ContactForm = () => {
                 <option className={style.option} value="No seleccionó">Tipo de Servicio</option>
                 <option className={style.option} value="Boda">Bodas</option>
                 <option className={style.option} value="Evento Corporativo">Evento Corporativo</option>
-                <option className={style.option} value="Fiesta privada">Evento social</option>
+                <option className={style.option} value="Evento social">Evento social</option>
+                <option className={style.option} value="Otros">Otros</option>
               </select>
             </div>
 

@@ -2,16 +2,11 @@
   {
     "titulo":"El primer Titulo",
     "subTitulo": "El primer SUBtitulo",
-    "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704895710/El%20buen%20gusto/FB_IMG_1704895444217_vihlmu.jpg"
+    "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
   },
   {
     "titulo": "El segundo titulo",
     "subTitulo": "El segundo SUBtitulo",
-    "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-  },
-  {
-    "titulo": "El tercer titutlo",
-    "subTitulo": "El tercer SUBtitulo",
-    "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704895709/El%20buen%20gusto/FB_IMG_1704895585509_vfyaxq.jpg"
+    "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895709/El%20buen%20gusto/FB_IMG_1704895599064_wgoytv.jpg"
   }
 ]

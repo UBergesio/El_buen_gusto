@@ -3,7 +3,7 @@ import style from "./Servicios.module.css";
 const Servicios = () => {
   return (
     <div
-      className={`container-fluid text-center  ${style.container}`}
+      className={`container-fluid text-center ${style.container}`}
       id="servicios"
     >
       <h2 className={style.h2}>Servicios</h2>
@@ -15,17 +15,17 @@ const Servicios = () => {
             culinaria y hacer que tu boda sea aún más inolvidable con nuestro
             servicio de catering exclusivo para bodas. En "El Buen Gusto",
             entendemos que cada boda es única, y nos comprometemos a ofrecerte
-            un servicio personalizado que refleje tu estilo y creé recuerdos que
+            un servicio personalizado que refleje tu estilo y cree recuerdos que
             perdurarán toda la vida.
           </p>
           <button
             type="button"
-            class={`btn btn-outline-danger btn-sm ${style.botones}`}
+            className={`btn btn-outline-danger btn-sm ${style.botones}`}
           >
-            Mas info
+            Más info
           </button>
         </div>
-        <div class={`vr bg-light p-0 ${style.separadores}`}></div>
+        <div className={`vr bg-light p-0 ${style.separadores}`}></div>
         <div className="col-lg col-12 p-4">
           <h1 className={style.h1}>Eventos Corporativos</h1>
           <p className={style.p}>
@@ -38,12 +38,12 @@ const Servicios = () => {
           </p>
           <button
             type="button"
-            class={`btn btn-outline-danger btn-sm ${style.botones}`}
+            className={`btn btn-outline-danger btn-sm ${style.botones}`}
           >
-            Mas info
+            Más info
           </button>
         </div>
-        <div class={`vr bg-light p-0 ${style.separadores}`}></div>
+        <div className={`vr bg-light p-0 ${style.separadores}`}></div>
         <div className="col-lg col-12 p-4">
           <h1 className={`${style.h1}`}>Eventos Sociales</h1>
           <p className={style.p}>
@@ -56,9 +56,9 @@ const Servicios = () => {
           </p>
           <button
             type="button"
-            class={`btn btn-outline-danger btn-sm ${style.botonesFuera}`}
+            className={`btn btn-outline-danger btn-sm ${style.botonesFuera}`}
           >
-            Mas info
+            Más info
           </button>
         </div>
       </div>

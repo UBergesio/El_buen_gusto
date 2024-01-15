@@ -6,13 +6,12 @@ const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={` text-center bg-black ${style.container}`} id="nosotros">
+    <div className={`text-center bg-black ${style.container}`} id="nosotros">
       {isDesktop ? (
-        /*  Pantalla Grande */
-
+        /* Pantalla Grande */
         <div className="row">
           <h3 className={`${style.subTitulo}`}>
-            Mas de 20 años agasajando.{" "}
+            Más de 20 años agasajando.{" "}
             <img
               className={style.logo}
               src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
@@ -23,34 +22,31 @@ const Nosotros = () => {
           <div className="col">
             <h4 className={style.titulo}>
               Desde{" "}
-              <span className={`${style.buenGusto}`}>
-                "El buen Gusto"
-              </span>{" "}
-              sabemos que cada evento es <b>unico y especial.</b>
+              <span className={`${style.buenGusto}`}>"El buen Gusto"</span>{" "}
+              sabemos que cada evento es <b>único y especial.</b>
             </h4>
             <br />
             <p className={style.texto}>
-              Nuestro catering no se limita a un lugar fijo, llegamos a donde
+              Nuestro catering no se limita a un lugar fijo; llegamos a donde
               nos necesites.
               <br />
               <br />
               Realizamos <b>eventos de todo tipo</b>; ya sea bodas, cumpleaños,
-              conferencias empresariales o reuniones, nuestro equipo tiene la
-              experencia para brindarte un servicio de alta calidad en cualquier
-              ocasion.
+              conferencias empresariales o reuniones. Nuestro equipo tiene la
+              experiencia para brindarte un servicio de alta calidad en
+              cualquier ocasión.
               <br />
               <br /> Estamos preparados para ofrecerte diferentes{" "}
-              <b>opciones gastronomicas</b>; trabajamos para crear un menu que
+              <b>opciones gastronómicas</b>; trabajamos para crear un menú que
               refleje tus gustos y preferencias.
               <br />
               <br />
               <b>Trabajamos juntos</b> para garantizar que tu evento sea un
-              exito desde el primer hasta el ultimo detalle.
+              éxito desde el primer hasta el último detalle.
             </p>
           </div>
           <div className="col shadow">
             {/* Carrusel pantalla grande */}
-
             <div
               id="carouselExampleInterval"
               className="carousel slide"
@@ -102,38 +98,37 @@ const Nosotros = () => {
         </div>
       ) : (
         /* Pantalla Chica */
-
         <div className="row row-cols-1">
-          <h3 className={style.subTitulo}>Mas de 20 años agasajando. </h3>
+          <h3 className={style.subTitulo}>Más de 20 años agasajando. </h3>
           <img
             className={style.logo}
             src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
             alt="Logo"
           />
-          <div className="col ">
+          <div className="col">
             <h4 className={style.titulo}>
               Desde <span className={style.buenGusto}>"El buen Gusto"</span>{" "}
-              sabemos que cada evento es <b>unico y especial.</b>
+              sabemos que cada evento es <b>único y especial.</b>
             </h4>
             <br />
             <p className={style.texto}>
-              Nuestro catering no se limita a un lugar fijo, llegamos a donde
+              Nuestro catering no se limita a un lugar fijo; llegamos a donde
               nos necesites.
               <br />
               Realizamos <b>eventos de todo tipo</b>; ya sea bodas, cumpleaños,
-              conferencias empresariales o reuniones, nuestro equipo tiene la
-              experencia para brindarte un servicio de alta calidad en cualquier
-              ocasion.
+              conferencias empresariales o reuniones. Nuestro equipo tiene la
+              experiencia para brindarte un servicio de alta calidad en
+              cualquier ocasión.
               <br /> Estamos preparados para ofrecerte diferentes{" "}
-              <b>opciones gastronomicas</b>; trabajamos para crear un menu que
+              <b>opciones gastronómicas</b>; trabajamos para crear un menú que
               refleje tus gustos y preferencias.
               <br />
               <b>Trabajamos juntos</b> para garantizar que tu evento sea un
-              exito desde el primer hasta el ultimo detalle.
+              éxito desde el primer hasta el último detalle.
             </p>
           </div>
           <div className="col shadow">
-            {/* Carrucel pantalla chica */}
+            {/* Carrusel pantalla chica */}
             <div
               id="carouselExampleInterval"
               className="carousel slide"

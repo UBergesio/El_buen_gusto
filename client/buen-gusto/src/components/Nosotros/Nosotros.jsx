@@ -11,7 +11,7 @@ const Nosotros = () => {
         /*  Pantalla Grande */
 
         <div className="row">
-          <h3 className={style.subTitulo}>
+          <h3 className={`${style.subTitulo}`}>
             Mas de 20 años agasajando.{" "}
             <img
               className={style.logo}
@@ -22,7 +22,10 @@ const Nosotros = () => {
 
           <div className="col">
             <h4 className={style.titulo}>
-              Desde <span className={style.buenGusto}>"El buen Gusto"</span>{" "}
+              Desde{" "}
+              <span className={`${style.buenGusto}`}>
+                "El buen Gusto"
+              </span>{" "}
               sabemos que cada evento es <b>unico y especial.</b>
             </h4>
             <br />
@@ -147,7 +150,7 @@ const Nosotros = () => {
                   >
                     <img
                       src={item.img}
-                      className="d-block w-100 border bg-dark"
+                      className="d-block w-100 border bg-dark rounded border border-2 border-black"
                       alt="..."
                     />
                   </div>

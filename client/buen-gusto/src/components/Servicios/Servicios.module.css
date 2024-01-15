@@ -14,17 +14,40 @@
 .h1 {
   color: rgb(177, 0, 0);
   font-family: "Great Vibes", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .p {
   /* color: rgb(102, 52, 52); */
-  color: rgb(199, 195, 195);
+  color: rgb(175, 174, 174);
   font-family: "Montserrat", sans-serif;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .h2 {
   font-size: 4em;
   font-family: "Great Vibes", cursive;
-  color: white;
+  color: rgb(172, 172, 172);
+}
+
+.botones {
+  margin-top: 1em;
+  margin-bottom: -2em;
+  font-family: "Montserrat", sans-serif;
+}
+.botonesFuera {
+  margin-top: -1.4em;
+  margin-bottom: -2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .separadores {
+    width: 100%;
+    padding: 0;
+    min-height: 1px;
+  }
+  .botones {
+    margin-bottom: 0;
+  }
 }

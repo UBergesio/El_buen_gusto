@@ -1,0 +1,50 @@
+
+/* ! VER SI LOS SHADOWS GUSTAN O NO */
+
+
+.titulosCursiva {
+  color: rgb(177, 0, 0);
+  font-family: "Great Vibes", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulosCursivaBlanco {
+  font-size: 4em;
+  font-family: "Great Vibes", cursive;
+  color: rgb(199, 195, 195);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.subTitulosCursivaBlanco {
+  font-size: 4em;
+  font-family: "Great Vibes", cursive;
+  color: rgb(199, 195, 195);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.subTitulosCursiva {
+  font-family: "Great Vibes", cursive;
+  font-size: 3em;
+  color: rgb(177, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subTitulos {
+  color: rgb(102, 52, 52);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parrafos {
+  color: rgb(199, 195, 195);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textoSolo{
+  font-family: "Montserrat", sans-serif;
+}

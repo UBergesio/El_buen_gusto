@@ -1,14 +1,27 @@
 import { useMediaQuery } from "@react-hook/media-query";
 import style from "./Navbar.module.css";
 
+//LIBRERIAS
+import classNames from "classnames";
+
 const Navbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
+  const navClasses = classNames(
+    "navbar",
+    "navbar-expand-lg",
+    style.background,
+    {
+      [style.backgroundCel]: !isDesktop,
+    }
+  );
+
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg ${style.background}`}>
+      <nav className={navClasses}>
+        {" "}
         <div className="container-fluid">
-          <a className="navbar-brand text-light" href="#">
+          <a className="navbar-brand text-light" href="/">
             <img
               className={style.logo}
               src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
@@ -16,10 +29,13 @@ const Navbar = () => {
             />
           </a>
           <div>
+            {/* Pantalla Chica */}
             {isDesktop ? null : (
-              <p className={style.titulo}>
-                <b>El Buen Gusto</b>
-              </p>
+              <a href="/">
+                <p className={style.titulo}>
+                  <b>El Buen Gusto</b>
+                </p>
+              </a>
             )}
           </div>
 
@@ -70,10 +86,13 @@ const Navbar = () => {
                 </a>
               </li>
               <div>
+                {/* Pantalla Grande */}
                 {isDesktop ? (
+                  <a href="/">
                   <p className={style.titulo}>
                     <b>El Buen Gusto</b>
                   </p>
+                  </a>
                 ) : null}
               </div>
               <li className={`nav-item dropdown ${style.disntacias}`}>

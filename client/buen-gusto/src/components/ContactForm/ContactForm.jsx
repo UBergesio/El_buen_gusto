@@ -36,7 +36,7 @@ const ContactForm = () => {
       <div className={`row row-eq-height ${style.color}`}>  
         
         <div className='col-lg-7 col-md-12'>
-          <h2 className={styles.subTitulos}>¿Querés contactarnos?</h2>
+          <h2 className={styles.subTitulosBlanco}>¿Querés contactarnos?</h2>
           <form ref={form} onSubmit={sendEmail} className="row g-1">
             <div className="col-12">
               <label class="visually-hidden" for="name">Nombre y Apellido</label>

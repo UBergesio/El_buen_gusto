@@ -6,7 +6,7 @@ const Valores = () => {
             <h1 className={styles.titulosCursivaBlanco}>Nuestra filosofía</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.8766 13.8C18.8766 13.8 19.7766 5.8 15.0766 3C13.579 6.77575 11.4858 10.287 8.87658 13.4C5.17658 17.8 3.97658 25.4 11.8766 29.8C12.862 28.3543 13.6995 26.8133 14.3766 25.2C14.9312 23.0355 15.2992 20.8274 15.4766 18.6C15.4766 18.6 20.7766 23.7 19.7766 29.8C19.7766 29.8 31.7766 24 23.1766 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17,7 +17,7 @@ const Valores = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 31.8H31.3" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,7 +33,7 @@ const Valores = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M26.3001 2V20.2H19.6001V8.70001C19.6001 6.92306 20.306 5.21887 21.5625 3.96237C22.819 2.70588 24.5232 2 26.3001 2Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,7 +50,7 @@ const Valores = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.09991 12.6412C8.65631 11.6669 8.41802 10.6116 8.3999 9.54121C8.61041 7.73958 9.47526 6.07801 10.8303 4.87212C12.1853 3.66622 13.936 3 15.7499 3C17.5638 3 19.3145 3.66622 20.6695 4.87212C22.0245 6.07801 22.8894 7.73958 23.0999 9.54121C23.071 10.6103 22.8332 11.6634 22.3999 12.6412" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,7 +66,7 @@ const Valores = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 16H29.4V18.6C29.4 21.1726 28.3781 23.6399 26.559 25.459C24.7399 27.2781 22.2726 28.3 19.7 28.3H11.7C9.12741 28.3 6.66017 27.2781 4.84106 25.459C3.02196 23.6399 2 21.1726 2 18.6V16Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,7 +80,7 @@ const Valores = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className={`card h-100 border-light  text-light ${style.card}`}>
+                    <div className={`card h-100 border-light text-light ${style.card}`}>
                         <div className="card-body">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M27.6 21.5888C27.6408 20.1282 27.3673 18.6759 26.7979 17.3301C26.2286 15.9844 25.3767 14.7767 24.3 13.7888" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>

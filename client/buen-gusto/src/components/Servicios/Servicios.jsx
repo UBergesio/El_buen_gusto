@@ -1,4 +1,5 @@
 import style from "./Servicios.module.css";
+import { Link } from "react-router-dom";
 
 const Servicios = () => {
   return (
@@ -18,12 +19,14 @@ const Servicios = () => {
             un servicio personalizado que refleje tu estilo y cree recuerdos que
             perdurarán toda la vida.
           </p>
-          <button
-            type="button"
-            className={`btn btn-outline-danger btn-sm ${style.botones}`}
-          >
-            Más info
-          </button>
+          <Link to="/bodas">
+            <button
+              type="button"
+              className={`btn btn-outline-danger btn-sm ${style.botones}`}
+            >
+              Más info
+            </button>
+          </Link>
         </div>
         <div className={`vr bg-light p-0 ${style.separadores}`}></div>
         <div className="col-lg col-12 p-4">
@@ -36,12 +39,14 @@ const Servicios = () => {
             esfuerza por ofrecer una fusión de sabores deliciosa y presentación
             elegante.
           </p>
-          <button
-            type="button"
-            className={`btn btn-outline-danger btn-sm ${style.botones}`}
-          >
-            Más info
-          </button>
+          <Link to="/corporativos">
+            <button
+              type="button"
+              className={`btn btn-outline-danger btn-sm ${style.botones}`}
+            >
+              Más info
+            </button>
+          </Link>
         </div>
         <div className={`vr bg-light p-0 ${style.separadores}`}></div>
         <div className="col-lg col-12 p-4">
@@ -54,12 +59,14 @@ const Servicios = () => {
             esforzamos por crear experiencias gastronómicas que se adapten a la
             alegría y diversión de tus eventos sociales.
           </p>
-          <button
-            type="button"
-            className={`btn btn-outline-danger btn-sm ${style.botonesFuera}`}
-          >
-            Más info
-          </button>
+          <Link to="/sociales">
+            <button
+              type="button"
+              className={`btn btn-outline-danger btn-sm ${style.botonesFuera}`}
+            >
+              Más info
+            </button>
+          </Link>
         </div>
       </div>
     </div>

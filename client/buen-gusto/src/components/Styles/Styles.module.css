@@ -38,6 +38,13 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.subTitulosBlanco {
+  color: rgb(199, 195, 195);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .parrafos {
   color: rgb(199, 195, 195);
   font-family: "Montserrat", sans-serif;
@@ -47,4 +54,7 @@
 
 .textoSolo{
   font-family: "Montserrat", sans-serif;
+  color: rgb(199, 195, 195);
 }
+
+a{text-decoration: none;}

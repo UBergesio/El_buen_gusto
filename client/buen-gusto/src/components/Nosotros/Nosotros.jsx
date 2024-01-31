@@ -27,6 +27,34 @@ const Nosotros = () => {
             </h4>
             <br />
             <p className={style.texto}>
+              Desde 1999, hemos estado comprometidos con la excelencia en la
+              prestación de servicios de catering en todo el país. Nos
+              enorgullece ofrecer experiencias culinarias excepcionales que
+              cautivan los sentidos y crean recuerdos inolvidables.
+              <br />
+              <br />
+              A lo largo de los años, hemos perfeccionado nuestra artesanía
+              culinaria, fusionando creatividad, calidad y pasión en cada plato
+              que servimos.
+              <br />
+              <br /> Lo que nos distingue es nuestro compromiso con la
+              satisfacción del cliente. Entendemos que cada evento es único, y
+              trabajamos estrechamente para personalizar cada detalle y superar
+              sus expectativas.
+              <br />
+              <br />
+              ¡Gracias por considerarnos para su próximo evento!
+              <br />
+              <br />
+              <b>El Buen Gusto | Servicio de catering</b>
+            </p>
+            {/* <h4 className={style.titulo}>
+              Desde{" "}
+              <span className={`${style.buenGusto}`}>"El buen Gusto"</span>{" "}
+              sabemos que cada evento es <b>único y especial.</b>
+            </h4>
+            <br />
+            <p className={style.texto}>
               Nuestro catering no se limita a un lugar fijo; llegamos a donde
               nos necesites.
               <br />
@@ -43,7 +71,7 @@ const Nosotros = () => {
               <br />
               <b>Trabajamos juntos</b> para garantizar que tu evento sea un
               éxito desde el primer hasta el último detalle.
-            </p>
+            </p> */}
           </div>
           <div className="col shadow">
             {/* Carrusel pantalla grande */}
@@ -106,30 +134,14 @@ const Nosotros = () => {
             alt="Logo"
           />
           <div className="col">
-            <h4 className={style.titulo}>
-              Desde <span className={style.buenGusto}>"El buen Gusto"</span>{" "}
+          <h4 className={style.titulo}>
+              En{" "}
+              <span className={`${style.buenGusto}`}>"El buen Gusto"</span>{" "}
               sabemos que cada evento es <b>único y especial.</b>
-            </h4>
-            <br />
-            <p className={style.texto}>
-              Nuestro catering no se limita a un lugar fijo; llegamos a donde
-              nos necesites.
               <br />
-              Realizamos <b>eventos de todo tipo</b>; ya sea bodas, cumpleaños,
-              conferencias empresariales o reuniones. Nuestro equipo tiene la
-              experiencia para brindarte un servicio de alta calidad en
-              cualquier ocasión.
-              <br /> Estamos preparados para ofrecerte diferentes{" "}
-              <b>opciones gastronómicas</b>; trabajamos para crear un menú que
-              refleje tus gustos y preferencias.
               <br />
-              <b>Trabajamos juntos</b> para garantizar que tu evento sea un
-              éxito desde el primer hasta el último detalle.
-            </p>
-          </div>
-          <div className="col shadow">
-            {/* Carrusel pantalla chica */}
-            <div
+                        {/* Carrusel pantalla chica */}
+                        <div
               id="carouselExampleInterval"
               className="carousel slide"
               data-bs-ride="carousel"
@@ -176,6 +188,53 @@ const Nosotros = () => {
                 <span className="visually-hidden">Next</span>
               </button>
             </div>
+            </h4>
+            <br />
+            <p className={style.texto}>
+              Desde 1999, hemos estado comprometidos con la excelencia en la
+              prestación de servicios de catering en todo el país. Nos
+              enorgullece ofrecer experiencias culinarias excepcionales que
+              cautivan los sentidos y crean recuerdos inolvidables.
+              <br />
+              <br />
+              A lo largo de los años, hemos perfeccionado nuestra artesanía
+              culinaria, fusionando creatividad, calidad y pasión en cada plato
+              que servimos.
+              <br />
+              <br /> Lo que nos distingue es nuestro compromiso con la
+              satisfacción del cliente. Entendemos que cada evento es único, y
+              trabajamos estrechamente para personalizar cada detalle y superar
+              sus expectativas.
+              <br />
+              <br />
+              ¡Gracias por considerarnos para su próximo evento!
+              <br />
+              <br />
+              <b>El Buen Gusto | Servicio de catering</b>
+            </p>
+    {/*         <h4 className={style.titulo}>
+              Desde <span className={style.buenGusto}>"El buen Gusto"</span>{" "}
+              sabemos que cada evento es <b>único y especial.</b>
+            </h4>
+            <br />
+            <p className={style.texto}>
+              Nuestro catering no se limita a un lugar fijo; llegamos a donde
+              nos necesites.
+              <br />
+              Realizamos <b>eventos de todo tipo</b>; ya sea bodas, cumpleaños,
+              conferencias empresariales o reuniones. Nuestro equipo tiene la
+              experiencia para brindarte un servicio de alta calidad en
+              cualquier ocasión.
+              <br /> Estamos preparados para ofrecerte diferentes{" "}
+              <b>opciones gastronómicas</b>; trabajamos para crear un menú que
+              refleje tus gustos y preferencias.
+              <br />
+              <b>Trabajamos juntos</b> para garantizar que tu evento sea un
+              éxito desde el primer hasta el último detalle.
+            </p> */}
+          </div>
+          <div className="col shadow">
+
           </div>
         </div>
       )}

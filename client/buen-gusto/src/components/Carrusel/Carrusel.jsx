@@ -43,7 +43,7 @@ const Carrusel = () => {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h3>{item.titulo}</h3>
+              <h1 className="">{item.titulo}</h1>
               <p>{item.subTitulo}</p>
             </div>
           </div>

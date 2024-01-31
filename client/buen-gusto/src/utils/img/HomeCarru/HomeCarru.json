@@ -1,12 +1,12 @@
 [
   {
-    "titulo":"El primer Titulo",
-    "subTitulo": "El primer SUBtitulo",
+    "titulo":"Bienvenidos a El Buen Gusto",
+    "subTitulo": "Soluciones gastronómicas institucionales",
     "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
   },
   {
-    "titulo": "El segundo titulo",
-    "subTitulo": "El segundo SUBtitulo",
+    "titulo": "“Saber y poder hacerlo bien”",
+    "subTitulo": "",
     "img": "https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895709/El%20buen%20gusto/FB_IMG_1704895599064_wgoytv.jpg"
   }
 ]

@@ -136,8 +136,7 @@ const Nosotros = () => {
           />
           <div className="col">
             <h4 className={style.titulo}>
-              En <span className={`${style.buenGusto}`}>"El buen Gusto"</span>{" "}
-              sabemos que cada evento es <b>único y especial.</b>
+              Sabemos que cada evento es <b>único y especial.</b>
               <br />
               <br />
               {/* Carrusel pantalla chica */}
@@ -211,33 +210,28 @@ const Nosotros = () => {
               <br />
               <br />
               <b>El Buen Gusto | Servicio de catering</b>
-            </p> */}
-
-            <div
-              className={`accordion accordion-flush`}
-              id="accordionFlushExample"
-            >
-              <div className="accordion-item">
-                <h2 className="accordion-header">
+            </p> */}{" "}
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
                   <button
-                    className={`accordion-button collapsed ${style.acordion}`}
+                    className={`accordion-button  ${style.acordion}`}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
                   >
-                    <h4 className={style.titulo}>Nosotros</h4>
+                    <h4 className={style.titulo}>Nosotros:</h4>
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseOne"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  id="collapseOne"
+                  className={`accordion-collapse collapse show  ${style.textoAcordion}`}
+                  data-bs-parent="#accordionExample"
                 >
-                  <div className="accordion-body">
-                    {" "}
-                    <p className={style.texto}>
+                  <div class="accordion-body">
+                    <p>
                       Desde 1999, hemos estado comprometidos con la excelencia
                       en la prestación de servicios de catering en todo el país.
                       Nos enorgullece ofrecer experiencias culinarias
@@ -263,9 +257,9 @@ const Nosotros = () => {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item"></div>
             </div>
           </div>
+
           <div className="col shadow"></div>
         </div>
       )}

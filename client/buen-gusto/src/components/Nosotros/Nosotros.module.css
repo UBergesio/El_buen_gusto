@@ -54,6 +54,7 @@
   color: rgb(179, 177, 177);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .logo {
   height: 0.9em;
   width: 0.9em;
@@ -68,7 +69,18 @@
     rgba(0, 0, 0, 1) 100%);
     box-shadow: 2px 4px 10px 4px rgb(0, 0, 0);
 }
-
+.textoAcordion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.08em;
+  color: rgb(179, 177, 177);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%);
+    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+}
 .container {
   padding: 2em;
   background: linear-gradient(

@@ -1,26 +1,55 @@
-
-.titulo{
+.titulo {
   color: rgb(199, 195, 195);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 .subTitulo {
-  font-family: "Great Vibes", cursive;
-  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 2.3em;
   color: rgb(177, 0, 0);
   margin-top: 0.3em;
-  margin-bottom: 0.6em;
+  margin-bottom: 1.2em;
   text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
-}
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%);
+    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+    width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+    
+  }
+.subTituloChica {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 1.5em;
+  color: rgb(177, 0, 0);
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%);
+    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+    width: 100%;
+/*   margin-left: 25%;
+  margin-right: 25%; */
+    
+  }
+  
 .buenGusto {
   font-family: "Great Vibes", cursive;
   color: rgb(177, 0, 0);
   font-size: 1.5em;
 }
 
-.texto{
-  font-family: 'Montserrat', sans-serif;
+.texto {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.08em;
   color: rgb(179, 177, 177);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -31,22 +60,35 @@
   margin-bottom: 0.3em;
 }
 
-.container{
-  padding: 2em;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);
-  /*height: 40em;*/
+.acordion{
+    background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%);
+    box-shadow: 2px 4px 10px 4px rgb(0, 0, 0);
+}
 
+.container {
+  padding: 2em;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(36, 36, 36, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /*height: 40em;*/
 }
 
 @media (max-width: 767px) {
-.logo{
+  .logo {
     height: 4em;
-  width: 5em;
-margin-left: 40%;
-margin-bottom: 2em;
-}
-.subTitulo{
-  margin-bottom: 0;
-  margin-top: 0;
-}
+    width: 5em;
+    margin-left: 40%;
+    margin-bottom: 2em;
+  }
+  .subTitulo {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }

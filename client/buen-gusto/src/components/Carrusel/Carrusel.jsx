@@ -1,5 +1,6 @@
 import style from "./Carrusel.module.css";
 import HomeCarru from "../../utils/img/HomeCarru/HomeCarru.json";
+import styleG from "../Styles/Styles.module.css"
 
 const Carrusel = () => {
   return (
@@ -43,8 +44,8 @@ const Carrusel = () => {
               alt="..."
             />
             <div className="carousel-caption d-none d-md-block">
-              <h1 className="">{item.titulo}</h1>
-              <p>{item.subTitulo}</p>
+              <h1 className={styleG.subTitulosBlanco}>{item.titulo}</h1>
+              <h4 className={styleG.subTitulosBlanco}>{item.subTitulo}</h4>
             </div>
           </div>
         ))}

@@ -21,9 +21,7 @@ const Nosotros = () => {
           <div className="row">
             <div className="col">
               <h4 className={style.titulo}>
-                Desde{" "}
-                <span className={`${style.buenGusto}`}>"El buen Gusto"</span>{" "}
-                sabemos que cada evento es <b>único y especial.</b>
+                Sabemos que cada evento es <b>único y especial.</b>
               </h4>
               <br />
               <p className={style.texto}>

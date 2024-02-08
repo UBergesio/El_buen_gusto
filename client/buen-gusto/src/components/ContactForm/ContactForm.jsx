@@ -233,6 +233,16 @@ const ContactForm = () => {
                 El Buen Gusto
               </a>
             </li>
+            <li className="mb-4">
+              <i className={`fa fa-envelope-o ${style.mail}`} ></i>
+              <a
+                class="link-light link-underline-opacity-0"
+                href="mailto:elbuengusto99@hotmail.com"
+              >
+             {" "}
+              elbuengusto99@hotmail.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>

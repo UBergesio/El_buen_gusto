@@ -34,7 +34,9 @@
   outline: none;
   color: beige;
 }
-
+.mail{
+  color:white;
+}
 .option {
   color: black;
 }

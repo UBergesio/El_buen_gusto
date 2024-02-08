@@ -1,8 +1,16 @@
+// MODULOS
 import style from "./Carrusel.module.css";
 import HomeCarru from "../../utils/img/HomeCarru/HomeCarru.json";
-import styleG from "../Styles/Styles.module.css"
+import HomeCarruCel from "../../utils/img/HomeCarru/HomeCarruCel.json";
+
+// LIBRERIAS
+import { useMediaQuery } from "@react-hook/media-query";
+
 
 const Carrusel = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const carruselData = isDesktop ? HomeCarru : HomeCarruCel;
+
   return (
     <div
       id="carouselExampleCaptions"
@@ -10,29 +18,20 @@ const Carrusel = () => {
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions "
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+        {carruselData.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to={index}
+            className={index === 0 ? "active" : ""}
+            aria-current={index === 0 ? "true" : undefined}
+            aria-label={`Slide ${index + 1}`}
+          ></button>
+        ))}
       </div>
-      <div className="carousel-inner ">
-        {HomeCarru.map((item, index) => (
+      <div className="carousel-inner">
+        {carruselData.map((item, index) => (
           <div
             key={index}
             className={index === 0 ? "carousel-item active" : "carousel-item"}
@@ -43,9 +42,9 @@ const Carrusel = () => {
               className={`d-block w-100 border-bottom border-2 border-black ${style.img}`}
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block">
-              <h1 className={styleG.subTitulosBlanco}>{item.titulo}</h1>
-              <h4 className={styleG.subTitulosBlanco}>{item.subTitulo}</h4>
+            <div className="carousel-caption  d-md-block">
+              <h1 className={style.subTitulosBlanco}>{item.titulo}</h1>
+              <h4 className={style.subTitulosBlanco}>{item.subTitulo}</h4>
             </div>
           </div>
         ))}
@@ -71,4 +70,5 @@ const Carrusel = () => {
     </div>
   );
 };
+
 export default Carrusel;

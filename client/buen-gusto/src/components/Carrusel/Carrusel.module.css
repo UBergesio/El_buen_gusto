@@ -1,11 +1,26 @@
 .tamanioCarrusel {
   width: 100%;
   margin: auto;
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);  
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(36, 36, 36, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-.img{
-  border-bottom-left-radius:50% 100px;
+.img {
+  border-bottom-left-radius: 50% 100px;
   border-bottom-right-radius: 50% 100px;
-z-index: 2;
+  z-index: 2;
+}
+
+.subTitulosBlanco {
+  color: rgb(226, 222, 222);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black; /* Para navegadores basados en WebKit */
+  text-stroke-width: 1px;
+  text-stroke-color: black;
 }

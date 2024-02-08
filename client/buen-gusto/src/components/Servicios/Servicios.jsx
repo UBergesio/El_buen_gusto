@@ -93,7 +93,7 @@ const Servicios = () => {
                 <h1 className={style.h1}>Bodas</h1>
               </button>
               <button
-                className="nav-link"
+                className={`nav-link ${style.botonesNav}`}
                 id="nav-profile-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-profile"
@@ -105,7 +105,7 @@ const Servicios = () => {
                 <h1 className={style.h1}>Corporativos</h1>
               </button>
               <button
-                className="nav-link"
+                className={`nav-link ${style.botonesNav}`}
                 id="nav-contact-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-contact"
@@ -118,7 +118,7 @@ const Servicios = () => {
               </button>
             </div>
           </nav>
-          <div className="tab-content" id="nav-tabContent">
+          <div className="tab-content " id="nav-tabContent">
             <div
               className="tab-pane fade show active"
               id="nav-home"
@@ -200,5 +200,3 @@ const Servicios = () => {
 };
 
 export default Servicios;
-
-

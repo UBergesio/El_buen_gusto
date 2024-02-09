@@ -1,9 +1,29 @@
 import style from "./Servicios.module.css";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "@react-hook/media-query";
+import React, { useState, useEffect } from "react";
+
 
 const Servicios = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        // Verifica si el scroll está más abajo de cierta posición
+        if (window.scrollY > 1200) {
+          setAnimate(true); // Activa la animación
+        } 
+      };
+
+      window.addEventListener('scroll', handleScroll); // Agrega el event listener
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll); // Limpia el event listener al desmontar
+      };
+    }, []); // El useEffect se ejecuta solo una vez al montar el componente
+  
 
   return (
     <div>
@@ -76,7 +96,9 @@ const Servicios = () => {
         >
           <nav>
             <div
-              className={`nav nav-tabs ${style.nav}`}
+              className={`nav nav-tabs ${style.nav} ${
+                animate ? style.animate : ""
+              }`}
               id="nav-tab"
               role="tablist"
             >
@@ -90,7 +112,7 @@ const Servicios = () => {
                 aria-controls="nav-home"
                 aria-selected="true"
               >
-                <h1 className={style.h1}>Bodas</h1>
+                <h1 className={style.h1Nav}>Bodas</h1>
               </button>
               <button
                 className={`nav-link ${style.botonesNav}`}
@@ -102,7 +124,7 @@ const Servicios = () => {
                 aria-controls="nav-profile"
                 aria-selected="false"
               >
-                <h1 className={style.h1}>Corporativos</h1>
+                <h1 className={style.h1Nav}>Corporativos</h1>
               </button>
               <button
                 className={`nav-link ${style.botonesNav}`}
@@ -114,11 +136,14 @@ const Servicios = () => {
                 aria-controls="nav-contact"
                 aria-selected="false"
               >
-                <h1 className={`${style.h1}`}>Sociales</h1>
+                <h1 className={`${style.h1Nav}`}>Sociales</h1>
               </button>
             </div>
           </nav>
-          <div className="tab-content " id="nav-tabContent">
+          <div
+            className={`tab-content ${animate ? style.animate2 : ""}`}
+            id="nav-tabContent"
+          >
             <div
               className="tab-pane fade show active"
               id="nav-home"

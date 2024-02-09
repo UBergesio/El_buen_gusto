@@ -2,6 +2,7 @@
   color: rgb(199, 195, 195);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
+    /* animation: moverDesdeDerecha 3s forwards; */
 }
 .subTitulo {
   font-family: "Montserrat", sans-serif;
@@ -15,13 +16,14 @@
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgb(49, 48, 48) 50%,
-    rgba(0, 0, 0, 1) 100%);
-    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
-    width: 50%;
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-    
-  }
+}
+
 .subTituloChica {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Great Vibes", cursive; */
@@ -34,14 +36,15 @@
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgb(49, 48, 48) 50%,
-    rgba(0, 0, 0, 1) 100%);
-    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
-    width: 100%;
-/*   margin-left: 25%;
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  width: 100%;
+  /*   margin-left: 25%;
   margin-right: 25%; */
-    
-  }
-  
+  animation: moverDesdeIzquierda 3s forwards;
+}
+
 .buenGusto {
   font-family: "Great Vibes", cursive;
   color: rgb(177, 0, 0);
@@ -61,25 +64,27 @@
   margin-bottom: 0.3em;
 }
 
-.acordion{
-    background: linear-gradient(
+.acordion {
+  background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgb(49, 48, 48) 50%,
-    rgba(0, 0, 0, 1) 100%);
-    box-shadow: 2px 4px 10px 4px rgb(0, 0, 0);
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 10px 4px rgb(0, 0, 0);
 }
 .textoAcordion {
   font-family: "Montserrat", sans-serif;
   font-size: 1.08em;
   color: rgb(179, 177, 177);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      background: linear-gradient(
+  background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgb(49, 48, 48) 50%,
-    rgba(0, 0, 0, 1) 100%);
-    box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
 }
 .container {
   padding: 2em;
@@ -90,6 +95,14 @@
     rgba(0, 0, 0, 1) 100%
   );
   /*height: 40em;*/
+}
+
+
+
+
+
+.animate {
+  animation: animate 1s forwards;
 }
 
 @media (max-width: 767px) {
@@ -104,3 +117,23 @@
     margin-top: 0;
   }
 }
+
+@keyframes moverDesdeIzquierda {
+  from {
+    margin-left: -10em; /* Posición inicial fuera de la pantalla hacia la izquierda */
+  }
+  to {
+    margin-left: 0; /* Posición final */
+  }
+}
+@keyframes animate {
+  from {
+    margin-left: 30em;
+    margin-right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0; /* Posición final */
+  }
+}
+

@@ -1,12 +1,36 @@
 import style from "./Nosotros.module.css";
 import { useMediaQuery } from "@react-hook/media-query";
 import nosotros from "../../utils/img/nosotros/nosotros.json";
+import React, { useState, useEffect } from "react";
 
 const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
+
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        // Verifica si el scroll está más abajo de cierta posición
+        if (window.scrollY > 20) {
+          setAnimate(true); // Activa la animación
+        } 
+      };
+
+      window.addEventListener('scroll', handleScroll); // Agrega el event listener
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll); // Limpia el event listener al desmontar
+      };
+    }, []); // El useEffect se ejecuta solo una vez al montar el componente
+  
+
   return (
-    <div className={`text-center bg-black ${style.container}`} id="nosotros">
+    <div
+      className={`text-center bg-black ${style.container}`}
+      id="nosotros"
+    >
+      {" "}
       {isDesktop ? (
         /* Pantalla Grande */
         <div>
@@ -140,7 +164,9 @@ const Nosotros = () => {
               {/* Carrusel pantalla chica */}
               <div
                 id="carouselExampleInterval"
-                className="carousel slide"
+                className={`carousel slide ${
+        animate ? style.animate : ""
+      }`}
                 data-bs-ride="carousel"
               >
                 <div className="carousel-inner">

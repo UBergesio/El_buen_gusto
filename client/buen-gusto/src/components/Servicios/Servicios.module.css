@@ -15,7 +15,7 @@
   color: rgb(177, 0, 0);
   font-family: "Great Vibes", cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.7em;
+  font-size: 2.3em;
 }
 .nav{
  flex-wrap: wrap;
@@ -54,11 +54,23 @@
     background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.822) 0%,
-    rgb(15, 15, 15) 40%,
+    rgb(15, 15, 15) 50%,
     rgba(0, 0, 0, 1) 100%
   );
 }
+.animate {
+  animation: animate 2s forwards;
+}
+.animate2 {
+  animation2: animate 2s forwards;
+}
 
+.h1Nav {
+  color: rgb(177, 0, 0);
+  font-family: "Great Vibes", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+}
 
 @media (max-width: 767px) {
   .separadores {
@@ -68,5 +80,27 @@
   }
   .botones {
     margin-bottom: 0;
+  }
+}
+
+
+@keyframes animate {
+  from {
+    margin-left: 30em;
+    margin-right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0; /* Posición final */
+  }
+}
+@keyframes animate2 {
+  from {
+    margin-left: -30em;
+    margin-right: 30em; /* Posición inicial fuera de la pantalla hacia la derecha */
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0; /* Posición final */
   }
 }

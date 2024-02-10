@@ -69,14 +69,6 @@ const Navbar = () => {
                   <b>Valores</b>
                 </a>
               </li>
-              <li className="nav-item ">
-                <a
-                  className={`nav-link active text-light ${style.text}`}
-                  href="#"
-                >
-                  <b>Galeria</b>
-                </a>
-              </li>
               <li className="nav-item">
                 <a
                   className={`nav-link active text-light ${style.text}`}

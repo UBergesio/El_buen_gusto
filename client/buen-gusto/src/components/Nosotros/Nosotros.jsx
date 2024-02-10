@@ -161,55 +161,59 @@ const Nosotros = () => {
               <br />
               <br />
               {/* Carrusel pantalla chica */}
-              <div
-                id="carouselExampleInterval"
-                className={`carousel slide ${
-                  animate ? style.moverDesdeDerecha : ""
-                }`}
-                data-bs-ride="carousel"
-              >
-                <div className="carousel-inner">
-                  {nosotros.map((item, index) => (
-                    <div
-                      key={index}
-                      className={
-                        index === 0 ? "carousel-item active" : "carousel-item"
-                      }
-                      data-bs-interval="3000"
-                    >
-                      <img
-                        src={item.img}
-                        className="d-block w-100 border bg-dark rounded border border-2 border-black"
-                        alt="..."
-                      />
-                    </div>
-                  ))}
+              {animate ? (
+                <div
+                  id="carouselExampleInterval"
+                  className={`carousel slide ${
+                    animate ? style.moverDesdeDerecha : ""
+                  }`}
+                  data-bs-ride="carousel"
+                >
+                  <div className="carousel-inner">
+                    {nosotros.map((item, index) => (
+                      <div
+                        key={index}
+                        className={
+                          index === 0 ? "carousel-item active" : "carousel-item"
+                        }
+                        data-bs-interval="3000"
+                      >
+                        <img
+                          src={item.img}
+                          className="d-block w-100 border bg-dark rounded border border-2 border-black"
+                          alt="..."
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      className="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <button
-                  className="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleInterval"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleInterval"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
-              </div>
+              ) : (
+                <div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+              )}
             </h4>
             <br />
             {/*             <p className={style.texto}>

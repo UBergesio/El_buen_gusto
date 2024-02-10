@@ -58,11 +58,8 @@
     rgba(0, 0, 0, 1) 100%
   );
 }
-.animate {
-  animation: animate 2s forwards;
-}
-.animate2 {
-  animation2: animate 2s forwards;
+.moverDesdeDerecha {
+  animation: moverDesdeDerecha 3s forwards;
 }
 
 .h1Nav {
@@ -84,20 +81,10 @@
 }
 
 
-@keyframes animate {
+@keyframes moverDesdeDerecha {
   from {
     margin-left: 30em;
     margin-right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
-  }
-  to {
-    margin-left: 0;
-    margin-right: 0; /* Posición final */
-  }
-}
-@keyframes animate2 {
-  from {
-    margin-left: -30em;
-    margin-right: 30em; /* Posición inicial fuera de la pantalla hacia la derecha */
   }
   to {
     margin-left: 0;

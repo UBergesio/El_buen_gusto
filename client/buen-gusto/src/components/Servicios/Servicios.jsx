@@ -27,6 +27,7 @@ const Servicios = () => {
 
   return (
     <div>
+      {/* PANTALLA GRANDE */}
       {isDesktop ? (
         <div className={`row align-items-start ${style.container}`}>
           <div className="col-lg col-12 p-4">
@@ -90,56 +91,73 @@ const Servicios = () => {
           </div>
         </div>
       ) : (
+        /* PANTALLA CHICA */
         <div
           className={`container-fluid text-center ${style.container}`}
           id="servicios"
         >
-          <nav>
-            <div
-              className={`nav nav-tabs ${style.nav} ${
-                animate ? style.animate : ""
-              }`}
-              id="nav-tab"
-              role="tablist"
-            >
-              <button
-                className={`nav-link active ${style.botonesNav}`}
-                id="nav-home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-home"
-                type="button"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
+          {animate ? (
+            <nav>
+              <div
+                className={`nav nav-tabs ${style.nav} ${
+                  animate ? style.moverDesdeDerecha : ""
+                }`}
+                id="nav-tab"
+                role="tablist"
               >
-                <h1 className={style.h1Nav}>Bodas</h1>
-              </button>
-              <button
-                className={`nav-link ${style.botonesNav}`}
-                id="nav-profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-              >
-                <h1 className={style.h1Nav}>Corporativos</h1>
-              </button>
-              <button
-                className={`nav-link ${style.botonesNav}`}
-                id="nav-contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-contact"
-                type="button"
-                role="tab"
-                aria-controls="nav-contact"
-                aria-selected="false"
-              >
-                <h1 className={`${style.h1Nav}`}>Sociales</h1>
-              </button>
+                <button
+                  className={`nav-link active ${style.botonesNav}`}
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  <h1 className={style.h1Nav}>Bodas</h1>
+                </button>
+                <button
+                  className={`nav-link ${style.botonesNav}`}
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  <h1 className={style.h1Nav}>Corporativos</h1>
+                </button>
+                <button
+                  className={`nav-link ${style.botonesNav}`}
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  <h1 className={`${style.h1Nav}`}>Sociales</h1>
+                </button>
+              </div>
+            </nav>
+          ) : (
+            <div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
-          </nav>
+          )}
+
           <div
             className={`tab-content ${animate ? style.animate2 : ""}`}
             id="nav-tabContent"

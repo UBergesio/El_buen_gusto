@@ -12,7 +12,7 @@ const Nosotros = () => {
     useEffect(() => {
       const handleScroll = () => {
         // Verifica si el scroll está más abajo de cierta posición
-        if (window.scrollY > 20) {
+        if (window.scrollY > 15) {
           setAnimate(true); // Activa la animación
         } 
       };
@@ -26,10 +26,7 @@ const Nosotros = () => {
   
 
   return (
-    <div
-      className={`text-center bg-black ${style.container}`}
-      id="nosotros"
-    >
+    <div className={`text-center bg-black ${style.container}`} id="nosotros">
       {" "}
       {isDesktop ? (
         /* Pantalla Grande */
@@ -151,11 +148,13 @@ const Nosotros = () => {
         /* Pantalla Chica */
         <div className="row row-cols-1">
           <h3 className={style.subTituloChica}>Más de 20 años agasajando </h3>
-          <img
-            className={style.logo}
-            src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
-            alt="Logo"
-          />
+          <span>
+            <img
+              className={style.logo}
+              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/v1704724552/FB_IMG_1704724008401-fotor-bg-remover-20240108113434_s330vw.png"
+              alt="Logo"
+            />
+          </span>
           <div className="col">
             <h4 className={style.titulo}>
               Sabemos que cada evento es <b>único y especial.</b>
@@ -165,8 +164,8 @@ const Nosotros = () => {
               <div
                 id="carouselExampleInterval"
                 className={`carousel slide ${
-        animate ? style.animate : ""
-      }`}
+                  animate ? style.moverDesdeDerecha : ""
+                }`}
                 data-bs-ride="carousel"
               >
                 <div className="carousel-inner">

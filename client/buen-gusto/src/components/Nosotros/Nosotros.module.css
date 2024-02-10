@@ -42,7 +42,7 @@
   width: 100%;
   /*   margin-left: 25%;
   margin-right: 25%; */
-  animation: moverDesdeIzquierda 3s forwards;
+  animation: moverDesdeIzquierda 2s forwards;
 }
 
 .buenGusto {
@@ -101,15 +101,14 @@
 
 
 
-.animate {
-  animation: animate 1s forwards;
+.moverDesdeDerecha {
+  animation: moverDesdeDerecha 3s forwards;
 }
 
 @media (max-width: 767px) {
   .logo {
     height: 4em;
-    width: 5em;
-    margin-left: 40%;
+    width: 4em;
     margin-bottom: 2em;
   }
   .subTitulo {
@@ -126,7 +125,7 @@
     margin-left: 0; /* Posición final */
   }
 }
-@keyframes animate {
+@keyframes moverDesdeDerecha {
   from {
     margin-left: 30em;
     margin-right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
@@ -135,5 +134,23 @@
     margin-left: 0;
     margin-right: 0; /* Posición final */
   }
+}
+@keyframes giro {
+  from {
+    transform: rotate(360deg); /* Posición inicial fuera de la pantalla hacia la derecha */
+  }
+  to {
+    transform: rotate(0);; /* Posición final */
+  }
+  /* animation: giro 3s forwards; */
+}
+@keyframes zoom {
+  from {
+    transform: scale(4); /* Posición inicial fuera de la pantalla hacia la derecha */
+  }
+  to {
+    transform: scale(1);; /* Posición final */
+  }
+  /* animation: zoom 3s forwards; */
 }
 

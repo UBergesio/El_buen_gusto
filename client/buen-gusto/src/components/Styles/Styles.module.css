@@ -8,6 +8,23 @@
     rgba(0, 0, 0, 1) 100%
   );
 }
+.containerServicios{
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(31, 31, 31) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: relative;
+}
+.containerServiciosCel{
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(31, 31, 31) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 
 .titulosCursiva {
   color: rgb(177, 0, 0);
@@ -63,6 +80,45 @@
   margin-left: 25%;
   margin-right: 25%;
 }
+.subTituloServicio {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 2.3em;
+  color: blanchedalmond;/*rgb(177, 0, 0);*/
+  margin-top: 0.3em;
+  margin-bottom: 1.2em;
+  text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 25%;
+}
+.subTituloServicioCel {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 2.3em;
+  color: blanchedalmond;/*rgb(177, 0, 0);*/
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 25%;
+  margin-top:1em;
+}
 
 .subTitulosBlanco {
   color: rgb(226, 222, 222);
@@ -84,3 +140,21 @@
 }
 
 a{text-decoration: none;}
+
+.reels{
+  margin-top: -2em;
+  margin-left:8em;
+}
+.reelsCel{
+  margin-top: 0em;
+  margin-left:-3em;
+}
+.youTube{
+  width:520px;
+  height:315px;
+}
+.youTubeCel{
+  margin-left: -2em;
+   width:360px;
+  height:315px;
+}

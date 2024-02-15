@@ -12,7 +12,7 @@ const Servicios = () => {
     useEffect(() => {
       const handleScroll = () => {
         // Verifica si el scroll está más abajo de cierta posición
-        if (window.scrollY > 1200) {
+        if (window.scrollY > 800) {
           setAnimate(true); // Activa la animación
         } 
       };
@@ -145,8 +145,6 @@ const Servicios = () => {
             </nav>
           ) : (
             <div>
-              <br />
-              <br />
               <br />
               <br />
               <br />

@@ -96,7 +96,11 @@
   );
   /*height: 40em;*/
 }
-
+.reel{
+  width:370px;
+ height:600px;
+ margin-left:-1em;
+}
 
 
 
@@ -127,12 +131,12 @@
 }
 @keyframes moverDesdeDerecha {
   from {
-    left: 30em;
-    right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
+    margin-left: 30em;
+     /* Posición inicial fuera de la pantalla hacia la derecha */
   }
   to {
     left: 0;
-    right: 0; /* Posición final */
+    /* Posición final */
   }
 }
 @keyframes giro {

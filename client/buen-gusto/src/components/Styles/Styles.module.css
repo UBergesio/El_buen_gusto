@@ -158,3 +158,8 @@ a{text-decoration: none;}
    width:360px;
   height:315px;
 }
+
+.checks{
+  margin-left: -2em;
+  margin-right: -3em;
+}

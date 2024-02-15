@@ -99,7 +99,7 @@ const Nosotros = () => {
             <h4 className={style.titulo}>
               Sabemos que cada evento es <b>único y especial.</b>
               <br />
-              <br />git ad
+              <br />
               {/* Video pantalla chica */}
               <video
                 width="390"

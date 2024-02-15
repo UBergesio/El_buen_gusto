@@ -167,6 +167,11 @@ const Servicios = () => {
               aria-labelledby="nav-home-tab"
               tabIndex="0"
             >
+              <img
+                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                alt=""
+                className={style.img}
+              />
               <p className={style.p}>
                 En el día más especial de tu vida, permítenos elevar la
                 experiencia culinaria y hacer que tu boda sea aún más
@@ -191,6 +196,11 @@ const Servicios = () => {
               aria-labelledby="nav-profile-tab"
               tabIndex="0"
             >
+              <img
+                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                alt=""
+                className={style.img}
+              />
               <p className={style.p}>
                 Nuestro servicio de catering para eventos corporativos está
                 diseñado para elevar tu ocasión de negocios a través de
@@ -215,19 +225,22 @@ const Servicios = () => {
               aria-labelledby="nav-contact-tab"
               tabIndex="0"
             >
+              <img
+                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                alt=""
+                className={style.img}
+              />
               <p className={style.p}>
                 Entendemos que los eventos sociales requieren un enfoque
                 especial y personalizado. Nuestro servicio de catering para
                 eventos sociales está diseñado para hacer de cada ocasión un
                 festín memorable. Desde celebraciones familiares hasta reuniones
-                entre amigos, nos esforzamos por crear experiencias
-                gastronómicas que se adapten a la alegría y diversión de tus
-                eventos sociales.
+                entre amigos. <br /> <br /><br />
               </p>
               <Link to="/sociales">
                 <button
                   type="button"
-                  className={`btn btn-outline-danger btn-sm ${style.botonesFuera}`}
+                  className={`btn btn-outline-danger btn-sm ${style.botones}`}
                 >
                   Más info
                 </button>

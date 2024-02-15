@@ -103,7 +103,7 @@ const Navbar = () => {
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#"
+                      href=""
                     >
                       <Link to="/bodas" className={style.servicios}>
                         Bodas
@@ -113,7 +113,7 @@ const Navbar = () => {
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#"
+                      href=""
                     >
                       <Link to="/corporativos" className={style.servicios}>
                         {" "}
@@ -124,7 +124,7 @@ const Navbar = () => {
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#"
+                      href=""
                     >
                       <Link to="/sociales" className={style.servicios}>
                         {" "}

@@ -30,10 +30,15 @@ const Sociales = () => {
       <div className="row">
         <div className={`col-md-6 ${style.parrafos}`}>
           <h1 className={subTituloServicio}>Eventos Sociales</h1>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-          tempore, possimus molestias dolorum quod tempora, fugit ducimus odio
-          excepturi delectus vitae pariatur? Cupiditate harum animi doloribus ea
-          voluptatem et delectus!
+          Entendemos la importancia de cada momento compartido con seres
+          queridos. Nos esforzamos por hacer de cada celebración un evento
+          especial y memorable. Desde cumpleaños y aniversarios hasta reuniones
+          con amigos, estamos aquí para hacer realidad tus deseos. Ofrecemos una
+          amplia variedad de menús adaptados a tus gustos y ocasiones, brindando
+          un servicio completo de catering en cualquier ubicación. <br />
+          <br /> Con nuestra experiencia y equipamiento, tu fiesta será
+          inolvidable. ¡Solo tienes que disfrutar mientras nosotros nos
+          encargamos del resto!
         </div>
         <div className="col-md-6">
           <video width="390" height="640" controls autoplay className={reels}>
@@ -57,16 +62,13 @@ const Sociales = () => {
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Fiestas de 15</h5>
               <p className="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
-                nostrum a consequatur eveniet? Amet ducimus veritatis itaque!
-                Sint doloremque molestias deserunt quae aut, vitae impedit,
-                consequatur ut aspernatur accusamus dolorem?Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Quibusdam harum rem
-                dolorem! Explicabo cumque iure nulla aperiam culpa nisi odit
-                quas assumenda. Incidunt harum illum unde aspernatur, sint magni
-                omnis.
+                Ofrecemos una selección de menús especialmente creados para este
+                día único. Ya sea que celebres en un salón o en casa, contamos
+                con opciones para adaptarnos a tus necesidades. Desde menús para
+                adultos hasta propuestas pensadas para jóvenes, garantizamos una
+                experiencia memorable para todos los invitados.
               </p>
             </div>
           </div>
@@ -78,11 +80,15 @@ const Sociales = () => {
           <div className="row g-0">
             <div className="col-md-6">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Menús Temáticos</h5>
                 <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Ofrecemos una variedad de opciones temáticas ideales para
+                  celebraciones de cumpleaños, graduaciones y encuentros entre
+                  amigos. Desde una fiesta de pizza hasta un festín de sushi,
+                  pasando por platos mexicanos y una parrillada. Cada opción
+                  incluye una selección de tapas frías y calientes acordes a la
+                  temática, junto con deliciosos postres, y bebidas como
+                  gaseosas y cerveza para complementar la experiencia.
                 </p>
               </div>
             </div>
@@ -105,11 +111,15 @@ const Sociales = () => {
                 ></img>
               </div>
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Menús Temáticos</h5>
                 <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Ofrecemos una variedad de opciones temáticas ideales para
+                  celebraciones de cumpleaños, graduaciones y encuentros entre
+                  amigos. Desde una fiesta de pizza hasta un festín de sushi,
+                  pasando por platos mexicanos y una parrillada. Cada opción
+                  incluye una selección de tapas frías y calientes acordes a la
+                  temática, junto con deliciosos postres, y bebidas como
+                  gaseosas y cerveza para complementar la experiencia.
                 </p>
               </div>
             </div>
@@ -127,11 +137,15 @@ const Sociales = () => {
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Menús Informales</h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Una
+                opción de alto nivel para impresionar a tus invitados. Incluye
+                una variedad de tapas gourmet frías y calientes, cazuelas
+                seleccionadas de nuestra carta y postres igualmente elegidos.
+                Este menú es ideal para paladares exigentes y puede
+                complementarse con vinos de nuestra selección, champagne y
+                coctelería exclusiva.
               </p>
             </div>
           </div>

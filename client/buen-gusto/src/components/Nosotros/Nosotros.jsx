@@ -99,14 +99,14 @@ const Nosotros = () => {
             <h4 className={style.titulo}>
               Sabemos que cada evento es <b>único y especial.</b>
               <br />
-              <br />
+              <br />git ad
               {/* Video pantalla chica */}
               <video
                 width="390"
                 height="640"
                 controls
                 autoplay
-                className={`${animate ? style.reel : ""}`}
+                className={`${style.reel}`}
               >
                 <source
                   src="https://res.cloudinary.com/dp6ojzhsc/video/upload/v1708003718/El%20buen%20gusto/Nuestra_pasi%C3%B3n_es_transformar_eventos_en_experiencias_inolvidables_Cada_bocado_es_una_explosi%C3%B3n_de_sa...b_delicia_celebr%C3%A1_tus_sue%C3%B1os_con_nosotros_ElBuenGusto_Servicio_de_catering_Agasajando_desde_1999_serviciodecateri_pfwxej.mp4"

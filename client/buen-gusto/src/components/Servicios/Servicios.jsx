@@ -26,10 +26,10 @@ const Servicios = () => {
   
 
   return (
-    <div>
+    <div className={`container-fluid text-center p-0`}>
       {/* PANTALLA GRANDE */}
       {isDesktop ? (
-        <div className={`row align-items-start ${style.container}`}>
+        <div className={`row align-items-start m-0 ${style.container}`}>
           <div className="col-lg col-12 p-4">
             <h1 className={style.h1}>Bodas</h1>
             <p className={style.p}>

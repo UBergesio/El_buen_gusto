@@ -1,6 +1,13 @@
 
 /* ! VER SI LOS SHADOWS GUSTAN O NO */
-
+.container{
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(31, 31, 31) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 
 .titulosCursiva {
   color: rgb(177, 0, 0);
@@ -36,6 +43,25 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.subTitulo {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 2.3em;
+  color: blanchedalmond;/*rgb(177, 0, 0);*/
+  margin-top: 0.3em;
+  margin-bottom: 1.2em;
+  text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 48, 48) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .subTitulosBlanco {

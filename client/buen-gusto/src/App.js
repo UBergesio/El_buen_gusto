@@ -17,13 +17,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <WhatsappButton/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sociales" element={<Sociales />} />
         <Route path="/corporativos" element={<Corporativos />} />
         <Route path="/bodas" element={<Bodas />} />
       </Routes>
-      <WhatsappButton/>
       <ContactForm />
       <Footer />
     </div>

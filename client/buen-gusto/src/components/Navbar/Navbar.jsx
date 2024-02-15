@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useMediaQuery } from "@react-hook/media-query";
 import style from "./Navbar.module.css";
 
 //LIBRERIAS
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -81,9 +83,9 @@ const Navbar = () => {
                 {/* Pantalla Grande */}
                 {isDesktop ? (
                   <a href="/">
-                  <p className={style.titulo}>
-                    <b>El Buen Gusto</b>
-                  </p>
+                    <p className={style.titulo}>
+                      <b>El Buen Gusto</b>
+                    </p>
                   </a>
                 ) : null}
               </div>
@@ -101,25 +103,33 @@ const Navbar = () => {
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#servicios"
+                      href="#"
                     >
-                      Bodas
+                      <Link to="/bodas" className={style.servicios}>
+                        Bodas
+                      </Link>
                     </a>
                   </li>
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#servicios"
+                      href="#"
                     >
-                      Eventos Corporativos
+                      <Link to="/corporativos" className={style.servicios}>
+                        {" "}
+                        Eventos Corporativos
+                      </Link>
                     </a>
                   </li>
                   <li>
                     <a
                       className={`dropdown-item text-light ${style.customDropdownItem}`}
-                      href="#servicios"
+                      href="#"
                     >
-                      Eventos Sociales
+                      <Link to="/sociales" className={style.servicios}>
+                        {" "}
+                        Eventos Sociales
+                      </Link>
                     </a>
                   </li>
                 </ul>

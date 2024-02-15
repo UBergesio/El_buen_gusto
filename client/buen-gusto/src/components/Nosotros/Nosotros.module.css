@@ -127,12 +127,12 @@
 }
 @keyframes moverDesdeDerecha {
   from {
-    margin-left: 30em;
-    margin-right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
+    left: 30em;
+    right: -30em; /* Posición inicial fuera de la pantalla hacia la derecha */
   }
   to {
-    margin-left: 0;
-    margin-right: 0; /* Posición final */
+    left: 0;
+    right: 0; /* Posición final */
   }
 }
 @keyframes giro {

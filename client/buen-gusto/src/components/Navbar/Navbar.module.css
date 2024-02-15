@@ -1,7 +1,7 @@
 .disntacias {
   position: absolute;
   right: 0;
-  margin-right: 6em;
+  margin-right: 7em;
 }
 .dropdown {
   margin-right: 5em;
@@ -88,6 +88,9 @@ width: 100%;
 .customDropdownItem:hover {
   /* Set the desired text color for the dropdown items on hover */
   background-color: rgb(177, 0, 0); /* Your desired hover color here */;
+}
+.servicios{
+  color:white;
 }
 
 @keyframes moverDesdeDerecha {

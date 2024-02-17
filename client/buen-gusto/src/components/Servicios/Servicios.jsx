@@ -32,6 +32,11 @@ const Servicios = () => {
         <div className={`row align-items-start m-0 ${style.container}`}>
           <div className="col-lg col-12 p-4">
             <h1 className={style.h1}>Bodas</h1>
+            <img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600,g_auto/v1708023714/El%20buen%20gusto/FB_IMG_1704895444217_jc9jga.jpg"
+              alt=""
+              className={style.img}
+            />
             <p className={style.p}>
               En el día más especial de tu vida, permítenos elevar la
               experiencia culinaria y hacer que tu boda sea aún más inolvidable
@@ -52,6 +57,11 @@ const Servicios = () => {
           <div className={`vr bg-light p-0 ${style.separadores}`}></div>
           <div className="col-lg col-12 p-4">
             <h1 className={style.h1}>Eventos Corporativos</h1>
+            <img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600,g_auto/v1708023537/El%20buen%20gusto/El_pasado_Viernes_23_de_Febrero_nos_encontramos_en_la_localidad_de_General_Roca_realizando_los_15_a%C3%B1os_de_Luisina_Aliprandi_Gracias_por_confiar_en_nuestros_servicios_un_placer_agasajarlos._ElBuenGusto_rqp74r.jpg"
+              alt=""
+              className={style.img}
+            />
             <p className={style.p}>
               Nuestro servicio de catering para eventos corporativos está
               diseñado para elevar tu ocasión de negocios a través de
@@ -72,6 +82,11 @@ const Servicios = () => {
           <div className={`vr bg-light p-0 ${style.separadores}`}></div>
           <div className="col-lg col-12 p-4">
             <h1 className={`${style.h1}`}>Eventos Sociales</h1>
+            <img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600/v1708023535/El%20buen%20gusto/O1-1O_Casamiento_alfoponze_fbrusss_Recepci%C3%B3n_mesas_islas_Colita_de_cuadrid_mechada_con_papas_cubo_y_espinaca_a_la_crema_Brownie_con_helado_Un_placer_agasajarlos_en_su_noche_ElBuenGusto_q75qp0.jpg"
+              alt=""
+              className={style.img}
+            />
             <p className={style.p}>
               Entendemos que los eventos sociales requieren un enfoque especial
               y personalizado. Nuestro servicio de catering para eventos
@@ -168,7 +183,7 @@ const Servicios = () => {
               tabIndex="0"
             >
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600,g_auto/v1708023714/El%20buen%20gusto/FB_IMG_1704895444217_jc9jga.jpg"
                 alt=""
                 className={style.img}
               />
@@ -197,7 +212,7 @@ const Servicios = () => {
               tabIndex="0"
             >
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600,g_auto/v1708023537/El%20buen%20gusto/El_pasado_Viernes_23_de_Febrero_nos_encontramos_en_la_localidad_de_General_Roca_realizando_los_15_a%C3%B1os_de_Luisina_Aliprandi_Gracias_por_confiar_en_nuestros_servicios_un_placer_agasajarlos._ElBuenGusto_rqp74r.jpg"
                 alt=""
                 className={style.img}
               />
@@ -226,7 +241,7 @@ const Servicios = () => {
               tabIndex="0"
             >
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1024,h_740/v1704895709/El%20buen%20gusto/FB_IMG_1704895601807_cuplff.jpg"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/c_fill,w_1031,h_600/v1708023535/El%20buen%20gusto/O1-1O_Casamiento_alfoponze_fbrusss_Recepci%C3%B3n_mesas_islas_Colita_de_cuadrid_mechada_con_papas_cubo_y_espinaca_a_la_crema_Brownie_con_helado_Un_placer_agasajarlos_en_su_noche_ElBuenGusto_q75qp0.jpg"
                 alt=""
                 className={style.img}
               />
@@ -235,7 +250,8 @@ const Servicios = () => {
                 especial y personalizado. Nuestro servicio de catering para
                 eventos sociales está diseñado para hacer de cada ocasión un
                 festín memorable. Desde celebraciones familiares hasta reuniones
-                entre amigos. <br /> <br /><br />
+                entre amigos. <br /> <br />
+                <br />
               </p>
               <Link to="/sociales">
                 <button

@@ -1,9 +1,13 @@
-import React from "react";
+import React ,{ useEffect }from "react";
 import style from "../../Styles/Styles.module.css";
 import classNames from "classnames";
 import { useMediaQuery } from "@react-hook/media-query";
 
 const Bodas = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const containerServicios = classNames({
@@ -139,11 +143,11 @@ const Bodas = () => {
         </div>
       </div>
       <hr></hr>
-      <div className="card  mb-5">
+      <div className="card mb-5">
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023535/El%20buen%20gusto/O1-1O_Casamiento_alfoponze_fbrusss_Recepci%C3%B3n_mesas_islas_Colita_de_cuadrid_mechada_con_papas_cubo_y_espinaca_a_la_crema_Brownie_con_helado_Un_placer_agasajarlos_en_su_noche_ElBuenGusto_q75qp0.jpg"
               className="img-fluid rounded-start"
               alt="..."
             ></img>

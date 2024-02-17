@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import style from "../../Styles/Styles.module.css";
 import classNames from "classnames";
 import { useMediaQuery } from "@react-hook/media-query";
 
 
 const Sociales = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const containerServicios = classNames({

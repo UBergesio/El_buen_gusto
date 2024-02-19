@@ -24,6 +24,17 @@ const Sociales = () => {
     [style.reels]: isDesktop,
   });
 
+  const imagenesGrande = classNames({
+    ["img-fluid rounded-start"]: !isDesktop,
+    [style.imgService]: isDesktop
+  })
+  
+  const textoGrande = classNames({
+    ["card-title"] : !isDesktop,
+    [style.parrafoGrande] : isDesktop
+  })
+  
+
   return (
     <div
       className={`container-fluid p-5 ${containerServicios}`}
@@ -41,6 +52,12 @@ const Sociales = () => {
           <br /> Con nuestra experiencia y equipamiento, tu fiesta será
           inolvidable. ¡Solo tienes que disfrutar mientras nosotros nos
           encargamos del resto!
+          {isDesktop?(<img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
+              className={style.imgFlota}
+              alt="..."
+            ></img>):("")}
+        
         </div>
         <div className="col-md-6">
           <video width="390" height="640" controls autoplay className={reels}>
@@ -57,14 +74,14 @@ const Sociales = () => {
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-              className="img-fluid rounded-start"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_1_gldmrr.jpg"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title">Fiestas de 15</h5>
+              <h5 className={textoGrande}>Fiestas de 15</h5>
               <p className="card-text">
                 Ofrecemos una selección de menús especialmente creados para este
                 día único. Ya sea que celebres en un salón o en casa, contamos
@@ -82,7 +99,7 @@ const Sociales = () => {
           <div className="row g-0">
             <div className="col-md-6">
               <div className="card-body">
-                <h5 className="card-title">Menús Temáticos</h5>
+                <h5 className={textoGrande}>Menús Temáticos</h5>
                 <p className="card-text">
                   Ofrecemos una variedad de opciones temáticas ideales para
                   celebraciones de cumpleaños, graduaciones y encuentros entre
@@ -96,8 +113,8 @@ const Sociales = () => {
             </div>
             <div className="col-md-6">
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-                className="img-fluid rounded-start"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_3_dws8ub.jpg"
+                className={imagenesGrande}
                 alt="..."
               ></img>
             </div>
@@ -107,7 +124,7 @@ const Sociales = () => {
             <div className="col-md-6">
               <div className="col-md-6">
                 <img
-                  src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
+                  src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_3_dws8ub.jpg"
                   className="img-fluid rounded-start"
                   alt="..."
                 ></img>
@@ -132,14 +149,14 @@ const Sociales = () => {
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-              className="img-fluid rounded-start"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354535/El%20buen%20gusto/Cuidamos_cada_detalle_para_que_tu_evento_sea_%C3%BAnico_Descubr%C3%AD_la_magia_en_cada_bocado_elbuengusto_serviciodecatering_cateringparaeventos_eventossociales_eventosempresariales_xva%C3%B1os_mesarecepcion_1_pu1gkb.jpg"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title">Menús Informales</h5>
+              <h5 className={textoGrande}>Menús Informales</h5>
               <p className="card-text">
                 Una
                 opción de alto nivel para impresionar a tus invitados. Incluye

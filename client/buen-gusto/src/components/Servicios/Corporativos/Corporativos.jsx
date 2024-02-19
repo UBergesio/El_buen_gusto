@@ -26,7 +26,15 @@ const Corporativos = () => {
     [style.reels]: isDesktop
  })
   
+ const imagenesGrande = classNames({
+  ["img-fluid rounded-start"]: !isDesktop,
+  [style.imgService]: isDesktop
+})
 
+const textoGrande = classNames({
+  ["card-title"] : !isDesktop,
+  [style.parrafoGrande] : isDesktop
+})
 
   return (
     <div
@@ -41,6 +49,11 @@ const Corporativos = () => {
           breaks, almuerzos de trabajo, capacitaciones y más. <br /><br />Desarrollamos
           menús personalizados y estamos disponibles para resolver urgencias,
           garantizando un servicio excepcional en momentos críticos..
+          {isDesktop?(<img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
+              className={style.imgFlota}
+              alt="..."
+            ></img>):("")}
         </div>
         <div className="col-md-6">
           <video width="390" height="640" controls autoplay className={reels}>
@@ -57,8 +70,8 @@ const Corporativos = () => {
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-              className="img-fluid rounded-start"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023509/El%20buen%20gusto/Recepci%C3%B3n_mesas_islas_Algo_mejor_que_te_reciban_as%C3%AD_elbuengusto_catering_serviciodecatering_recepcion_mesarecepcion_cateringservice_cateringdeeventos_1_ysdbpn.jpg"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
@@ -67,7 +80,7 @@ const Corporativos = () => {
               <h5 className="card-title">
                 Desayunos, Meriendas Y Coffee Breaks
               </h5>
-              <p className="card-text">
+              <p className={textoGrande}>
                 En el Buen Gusto, ofrecemos una amplia gama de servicios para
                 desayunos, meriendas y coffee breaks, adaptados para diversas
                 ocasiones empresariales, como presentaciones, congresos,
@@ -87,7 +100,7 @@ const Corporativos = () => {
             <div className="col-md-6">
               <div className="card-body">
                 <h5 className="card-title">Almuerzos Y Cenas de Gala </h5>
-                <p className="card-text">
+                <p className={textoGrande}>
                   Esta alternativa es perfecta para eventos formales como
                   almuerzos o cenas de gala. Ya sea para reuniones laborales
                   privadas, cenas protocolares, eventos benéficos o fiestas de
@@ -101,8 +114,8 @@ const Corporativos = () => {
             </div>
             <div className="col-md-6">
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-                className="img-fluid rounded-start"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354535/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_wbprcr.jpg"
+                className={imagenesGrande}
                 alt="..."
               ></img>
             </div>
@@ -112,7 +125,7 @@ const Corporativos = () => {
             <div className="col-md-6">
               <div className="col-md-6">
                 <img
-                  src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
+                  src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354535/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_wbprcr.jpg"
                   className="img-fluid rounded-start"
                   alt="..."
                 ></img>
@@ -138,15 +151,15 @@ const Corporativos = () => {
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-              className="img-fluid rounded-start"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/El_pasado_Viernes_23_de_Febrero_nos_encontramos_en_la_localidad_de_General_Roca_realizando_los_15_a%C3%B1os_de_Luisina_Aliprandi_Gracias_por_confiar_en_nuestros_servicios_un_placer_agasajarlos._ElBuenGusto_rqp74r.jpg"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
           <div className="col-md-6">
             <div className="card-body">
               <h5 className="card-title">Fiestas De Fin De Año</h5>
-              <p className="card-text">
+              <p className={textoGrande}>
                 La culminación del año empresarial
                 es un momento crucial que requiere una planificación meticulosa.
                 Ya sea para un grupo reducido o una gran multitud de hasta 3500

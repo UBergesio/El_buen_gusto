@@ -1,5 +1,6 @@
 import React ,{ useEffect }from "react";
 import style from "../../Styles/Styles.module.css";
+import sstyle from "../Servicios.module.css";
 import classNames from "classnames";
 import { useMediaQuery } from "@react-hook/media-query";
 
@@ -23,6 +24,16 @@ const Bodas = () => {
     [style.youTubeCel]: !isDesktop,
     [style.youTube]: isDesktop,
   });
+
+  const imagenesGrande = classNames({
+    ["img-fluid rounded-start"]: !isDesktop,
+    [style.imgService]: isDesktop
+  })
+
+  const textoGrande = classNames({
+    ["card-title"] : !isDesktop,
+    [style.parrafoGrande] : isDesktop
+  })
 
   return (
     <div
@@ -148,14 +159,14 @@ const Bodas = () => {
           <div className="col-md-6">
             <img
               src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023535/El%20buen%20gusto/O1-1O_Casamiento_alfoponze_fbrusss_Recepci%C3%B3n_mesas_islas_Colita_de_cuadrid_mechada_con_papas_cubo_y_espinaca_a_la_crema_Brownie_con_helado_Un_placer_agasajarlos_en_su_noche_ElBuenGusto_q75qp0.jpg"
-              className="img-fluid rounded-start"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title">Casamientos Elegantes </h5>
-              <p className="card-text">
+              <h5 className={textoGrande}>Casamientos Elegantes </h5>
+              <p className="card-text" >
                 Para esta alternativa, que evoca un estilo sofisticado,
                 presentamos una selección de exquisitos menús gourmet que
                 abarcan los clásicos pasos culinarios: entrada, plato principal
@@ -173,8 +184,8 @@ const Bodas = () => {
           <div className="row g-0">
             <div className="col-md-6">
               <div className="card-body">
-                <h5 className="card-title">Celebraciones Relajadas </h5>
-                <p className="card-text">
+                <h5 className={textoGrande}>Celebraciones Relajadas </h5>
+                <p className="card-text" >
                   Para esta elección, los menús temáticos de múltiples pasos son
                   ideales para fiestas diseñadas en entornos informales, como
                   salas de estar o mesas altas, o para eventos más desenfadados
@@ -188,8 +199,8 @@ const Bodas = () => {
             </div>
             <div className="col-md-6">
               <img
-                src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-                className="img-fluid rounded-start"
+                src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_2_ncnbys.jpg"
+                className={imagenesGrande}
                 alt="..."
               ></img>
             </div>
@@ -199,7 +210,7 @@ const Bodas = () => {
             <div className="col-md-6">
               <div className="col-md-6">
                 <img
-                  src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
+                  src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Volvieron_las_fiestas_volvi%C3%B3_ElBuenGusto_El_finde_nos_encontramos_agasajando_a_un_total_de_400_per...socolos_correspondientes_15_a%C3%B1os_-_Villa_Mar%C3%ADa_las_moras_vm_50_a%C3%B1os_-_Leones_Sociedad_Italiana_Casamiento_-_Vill_2_ncnbys.jpg"
                   className="img-fluid rounded-start"
                   alt="..."
                 ></img>
@@ -225,15 +236,15 @@ const Bodas = () => {
         <div className="row g-0">
           <div className="col-md-6">
             <img
-              src="https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg"
-              className="img-fluid rounded-start"
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708354534/El%20buen%20gusto/Este_S%C3%A1bado_nos_encontramos_en_la_ciudad_de_Villa_Maria_festejando_un_cumple_a%C3%B1os_de_15_Almuerzo_LaIsolina_ElBuenGusto_u3okgy.jpg"
+              className={imagenesGrande}
               alt="..."
             ></img>
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title"> Bodas Rústicas </h5>
-              <p className="card-text">
+              <h5 className={textoGrande}> Bodas Rústicas </h5>
+              <p className="card-text" >
                 Si tu visión de la celebración perfecta involucra un ambiente al
                 aire libre, en medio de la naturaleza, entonces esta opción es la
                 indicada para ti. En las bodas rústicas, las alternativas más

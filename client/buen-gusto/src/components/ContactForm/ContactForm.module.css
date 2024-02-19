@@ -1,7 +1,16 @@
 .container {
   /*padding: 2em;
     /*background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);*/
-  background-image: url("https://res.cloudinary.com/dp6ojzhsc/image/upload/c_crop,w_1080,h_450/v1704895711/El%20buen%20gusto/FB_IMG_1704895471809_tivisp.jpg");
+  background-image: url("https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023534/El%20buen%20gusto/Men%C3%BA_de_pasos_y_maridaje_en_nuestro_Rest%C3%B3_malbec.resto_Paso_1_Entrada-_Mollejas_a_la_plancha_sobre_...ss-_D%C3%BAo_de_empanadas_de_matambre_Paso_2_Principal_-_Bondiola_de_cerdo_con_cremoso_de_papas_y_salsa_de_ciruelas_-_Ojo_de_gkliss.jpg");
+  z-index: 3;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.containerDesktop {
+  /*padding: 2em;
+    /*background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);*/
+  background-image: url("https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg");
   z-index: 3;
   background-size: cover;
   background-position: center;

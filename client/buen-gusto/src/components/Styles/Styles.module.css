@@ -163,3 +163,20 @@ a{text-decoration: none;}
   margin-left: -2em;
   margin-right: -3em;
 }
+
+
+.imgService{
+  width: auto;
+  height: 20em;
+}
+
+.parrafoGrande{
+ margin-top: 3em;
+}
+
+.imgFlota{
+  width: auto;
+  height: 17em;
+  border-radius: 2em;
+  margin-top: 1.5em;
+}

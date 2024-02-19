@@ -5,7 +5,7 @@ const Gallery = ({ images }) => {
   return (
     <div className="gallery">
       {images.map((image, index) => (
-        <img key={index} src={image} alt={`Gallery ${index + 1}`} />
+        <img key={index} src={image.img} alt={`Gallery ${index + 1}`} />
       ))}
     </div>
   );

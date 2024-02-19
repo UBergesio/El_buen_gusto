@@ -39,6 +39,7 @@ const Nosotros = () => {
                   alt="Logo"
                 />
               </h3>
+     
               <h4 className={style.titulo}>
                 Sabemos que cada evento es <b>único y especial.</b>
               </h4>
@@ -136,6 +137,11 @@ const Nosotros = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
+                  <img
+              src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
+              className="img-fluid rounded-start"
+              alt="..."
+            ></img>
                     <p>
                       Desde 1999, hemos estado comprometidos con la excelencia
                       en la prestación de servicios de catering en todo el país.

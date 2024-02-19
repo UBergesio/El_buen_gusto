@@ -2,6 +2,8 @@ import style from "./ContactForm.module.css";
 import styles from "../Styles/Styles.module.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import classNames from "classnames";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const ContactForm = () => {
   const form = useRef();
@@ -27,8 +29,14 @@ const ContactForm = () => {
         }
       );
   };
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const container = classNames({
+    [style.containerDesktop] : isDesktop,
+    [`container-fluid ${style.container}`] : !isDesktop
+  })
+  
   return (
-    <div className={`container-fluid ${style.container}`} id="contacto">
+    <div className={container} id="contacto">
       <div className={`row row-eq-height ${style.color}`}>
         <div className="col-lg-7 col-md-12">
           <h2 className={styles.subTitulosBlanco}>¿Querés contactarnos?</h2>

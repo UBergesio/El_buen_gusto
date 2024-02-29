@@ -18,6 +18,9 @@
   max-width: 99%;
 }
 
+.fecha{
+  height: 0.5em;
+}
 .color {
   background-color: rgba(36, 28, 28, 0.75);
   padding: 2em;

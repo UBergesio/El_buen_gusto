@@ -1,7 +1,7 @@
 import style from "./Nosotros.module.css";
 import { useMediaQuery } from "@react-hook/media-query";
 /* import nosotros from "../../utils/img/nosotros/nosotros.json";
- */import React, { useState, useEffect } from "react";
+ */ import React, { useState, useEffect } from "react";
 
 const Nosotros = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -75,6 +75,7 @@ const Nosotros = () => {
                 controls
                 autoplay
                 /* className={`${animate ? style.reel : ""}`} */
+                className={style.reelDest}
               >
                 <source
                   src="https://res.cloudinary.com/dp6ojzhsc/video/upload/v1708003718/El%20buen%20gusto/Nuestra_pasi%C3%B3n_es_transformar_eventos_en_experiencias_inolvidables_Cada_bocado_es_una_explosi%C3%B3n_de_sa...b_delicia_celebr%C3%A1_tus_sue%C3%B1os_con_nosotros_ElBuenGusto_Servicio_de_catering_Agasajando_desde_1999_serviciodecateri_pfwxej.mp4"
@@ -137,11 +138,11 @@ const Nosotros = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <img
+                   {/*  <img
                       src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
                       className="img-fluid rounded-start"
                       alt="..."
-                    ></img>
+                    ></img> */}
                     <p>
                       Estamos comprometidos con la excelencia en servicios de
                       catering en todo el país. Nos enorgullece ofrecer

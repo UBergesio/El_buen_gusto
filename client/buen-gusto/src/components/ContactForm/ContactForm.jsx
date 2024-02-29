@@ -39,7 +39,15 @@ const ContactForm = () => {
     <div className={container} id="contacto">
       <div className={`row row-eq-height ${style.color}`}>
         <div className="col-lg-7 col-md-12">
-          <h2 className={styles.subTitulosBlanco}>¿Querés contactarnos?</h2>
+          <h2 className={styles.subTitulosBlanco}>
+            {isDesktop ? (
+              <p>Festejemos juntos - Reservá tu fecha</p>
+            ) : (
+              <p>
+                Festejemos juntos <hr /> Reservá tu fecha
+              </p>
+            )}
+          </h2>
           <form ref={form} onSubmit={sendEmail} className="row g-1">
             <div className="col-12">
               <label class="visually-hidden" for="name">
@@ -117,7 +125,13 @@ const ContactForm = () => {
                 class="input-group-text bg-transparent text-light"
                 for="fecha"
               >
-                Fecha aproximada del evento
+                {isDesktop ? (
+                  <p>Fecha aproximada del evento</p>
+                ) : (
+                  <p className={style.fecha}>
+                    Fecha
+                  </p>
+                )}
               </label>
               <input
                 type="date"
@@ -242,13 +256,13 @@ const ContactForm = () => {
               </a>
             </li>
             <li className="mb-4">
-              <i className={`fa fa-envelope-o ${style.mail}`} ></i>
+              <i className={`fa fa-envelope-o ${style.mail}`}></i>
               <a
                 class="link-light link-underline-opacity-0"
                 href="mailto:elbuengusto99@hotmail.com"
               >
-             {" "}
-              elbuengusto99@hotmail.com
+                {" "}
+                elbuengusto99@hotmail.com
               </a>
             </li>
           </ul>

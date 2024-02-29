@@ -38,12 +38,12 @@ const Servicios = () => {
               className={style.img}
             />
             <p className={style.p}>
-              En el día más especial de tu vida, permítenos elevar la
+              {/*  En el día más especial de tu vida, permítenos elevar la
               experiencia culinaria y hacer que tu boda sea aún más inolvidable
               con nuestro servicio de catering exclusivo para bodas. En "El Buen
               Gusto", entendemos que cada boda es única, y nos comprometemos a
               ofrecerte un servicio personalizado que refleje tu estilo y cree
-              recuerdos que perdurarán toda la vida.
+              recuerdos que perdurarán toda la vida. */}
             </p>
             <Link to="/bodas">
               <button
@@ -63,12 +63,12 @@ const Servicios = () => {
               className={style.img}
             />
             <p className={style.p}>
-              Nuestro servicio de catering para eventos corporativos está
+              {/* Nuestro servicio de catering para eventos corporativos está
               diseñado para elevar tu ocasión de negocios a través de
               experiencias gastronómicas excepcionales. Ya sea una conferencia,
               una presentación de productos o una reunión ejecutiva, nuestro
               equipo se esfuerza por ofrecer una fusión de sabores deliciosa y
-              presentación elegante.
+              presentación elegante. */}
             </p>
             <Link to="/corporativos">
               <button
@@ -88,12 +88,12 @@ const Servicios = () => {
               className={style.img}
             />
             <p className={style.p}>
-              Entendemos que los eventos sociales requieren un enfoque especial
+              {/*  Entendemos que los eventos sociales requieren un enfoque especial
               y personalizado. Nuestro servicio de catering para eventos
               sociales está diseñado para hacer de cada ocasión un festín
               memorable. Desde celebraciones familiares hasta reuniones entre
               amigos, nos esforzamos por crear experiencias gastronómicas que se
-              adapten a la alegría y diversión de tus eventos sociales.
+              adapten a la alegría y diversión de tus eventos sociales. */}
             </p>
             <Link to="/sociales">
               <button
@@ -187,14 +187,14 @@ const Servicios = () => {
                 alt=""
                 className={style.img}
               />
-              <p className={style.p}>
+              {/* <p className={style.p}>
                 En el día más especial de tu vida, permítenos elevar la
                 experiencia culinaria y hacer que tu boda sea aún más
                 inolvidable con nuestro servicio de catering exclusivo para
                 bodas. En "El Buen Gusto", entendemos que cada boda es única, y
                 nos comprometemos a ofrecerte un servicio personalizado que
                 refleje tu estilo y cree recuerdos que perdurarán toda la vida.
-              </p>
+              </p> */}
               <Link to="/bodas">
                 <button
                   type="button"
@@ -216,14 +216,14 @@ const Servicios = () => {
                 alt=""
                 className={style.img}
               />
-              <p className={style.p}>
+              {/*        <p className={style.p}>
                 Nuestro servicio de catering para eventos corporativos está
                 diseñado para elevar tu ocasión de negocios a través de
                 experiencias gastronómicas excepcionales. Ya sea una
                 conferencia, una presentación de productos o una reunión
                 ejecutiva, nuestro equipo se esfuerza por ofrecer una fusión de
                 sabores deliciosa y presentación elegante.
-              </p>
+              </p> */}
               <Link to="/corporativos">
                 <button
                   type="button"
@@ -245,14 +245,14 @@ const Servicios = () => {
                 alt=""
                 className={style.img}
               />
-              <p className={style.p}>
+              {/*     <p className={style.p}>
                 Entendemos que los eventos sociales requieren un enfoque
                 especial y personalizado. Nuestro servicio de catering para
                 eventos sociales está diseñado para hacer de cada ocasión un
                 festín memorable. Desde celebraciones familiares hasta reuniones
                 entre amigos. <br /> <br />
                 <br />
-              </p>
+              </p> */}
               <Link to="/sociales">
                 <button
                   type="button"

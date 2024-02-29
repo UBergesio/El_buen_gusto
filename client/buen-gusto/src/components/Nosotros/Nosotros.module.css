@@ -32,13 +32,13 @@
   margin-top: 0.3em;
   margin-bottom: 0.5em;
   text-shadow: 8px 2px 7px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(
+/*   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgb(49, 48, 48) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0);
+  box-shadow: 2px 4px 8px 1px rgb(0, 0, 0); */
   width: 100%;
   /*   margin-left: 25%;
   margin-right: 25%; */

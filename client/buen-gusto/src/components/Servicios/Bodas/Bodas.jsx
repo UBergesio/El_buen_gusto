@@ -1,7 +1,7 @@
 import React ,{ useEffect }from "react";
 import style from "../../Styles/Styles.module.css";
-import sstyle from "../Servicios.module.css";
-import classNames from "classnames";
+/* import sstyle from "../Servicios.module.css";
+ */import classNames from "classnames";
 import { useMediaQuery } from "@react-hook/media-query";
 
 const Bodas = () => {
@@ -20,7 +20,7 @@ const Bodas = () => {
     [style.subTituloServicio]: isDesktop,
   });
 
-  const reels = classNames({
+/*   const reels = classNames({
     [style.youTubeCel]: !isDesktop,
     [style.youTube]: isDesktop,
   });
@@ -33,7 +33,7 @@ const Bodas = () => {
   const textoGrande = classNames({
     ["card-title"] : !isDesktop,
     [style.parrafoGrande] : isDesktop
-  })
+  }) */
 
   return (
     <div
@@ -50,16 +50,17 @@ const Bodas = () => {
           profesionales excepcionales.
         </div>
         <div className="col-md-6">
-          <iframe
+          {/* <iframe
             className={reels}
             src="https://www.youtube.com/embed/F08TiRnPGjU"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          <span className={style.parrafos}>*Espero video*</span>
         </div>
-        <div class="container text-center">
+       {/*  <div class="container text-center">
           <div class="row row-cols-2">
             <div class="col">
               {" "}
@@ -151,10 +152,10 @@ const Bodas = () => {
               <p className={style.parrafos}>Opcionales como Desayuno</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <hr></hr>
-      <div className="card mb-5">
+{/*       <div className="card mb-5">
         <div className="row g-0">
           <div className="col-md-6">
             <img
@@ -177,9 +178,9 @@ const Bodas = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="card mb-5">
-        {/* PARA VER SI ES EN CEL QUE SE ACOMODEN LAS CARDS DE ARRIBA A ABAJO */}
+      </div> */}
+      {/* PARA VER SI ES EN CEL QUE SE ACOMODEN LAS CARDS DE ARRIBA A ABAJO */}
+      {/* <div className="card mb-5">
         {isDesktop ? (
           <div className="row g-0">
             <div className="col-md-6">
@@ -231,8 +232,8 @@ const Bodas = () => {
             </div>
           </div>
         )}
-      </div>
-      <div className="card">
+      </div> */}
+{/*       <div className="card">
         <div className="row g-0">
           <div className="col-md-6">
             <img
@@ -256,7 +257,7 @@ const Bodas = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

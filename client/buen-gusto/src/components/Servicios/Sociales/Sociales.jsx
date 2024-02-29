@@ -52,14 +52,14 @@ const Sociales = () => {
           <br /> Con nuestra experiencia y equipamiento, tu fiesta será
           inolvidable. ¡Solo tienes que disfrutar mientras nosotros nos
           encargamos del resto!
-          {isDesktop?(<img
+          {/* {isDesktop?(<img
               src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
               className={style.imgFlota}
               alt="..."
-            ></img>):("")}
+            ></img>):("")} */}
         
         </div>
-        <div className="col-md-6">
+         <div className="col-md-6">
           <video width="390" height="640" controls autoplay className={reels}>
             <source
               src="https://res.cloudinary.com/dp6ojzhsc/video/upload/v1708003717/El%20buen%20gusto/La_magia_de_los_XV_a%C3%B1os_se_encuentra_en_los_detalles_y_nuestro_catering_es_el_toque_perfecto_para_hacerl....n_vistazo_a_nuestra_experiencia_gastron%C3%B3mica_en_los_15_de_Guille_guillerminabruno___martinbruno_ok_analiaperezz___c_dpmlo6.mp4"
@@ -70,7 +70,7 @@ const Sociales = () => {
         </div>
       </div>
       <hr></hr>
-      <div className="card  mb-5">
+      {/*<div className="card  mb-5">
         <div className="row g-0">
           <div className="col-md-6">
             <img
@@ -93,9 +93,9 @@ const Sociales = () => {
           </div>
         </div>
       </div>
-      <div className="card mb-5">
+      <div className="card mb-5"> */}
         {/* PARA VER SI ES EN CEL QUE SE ACOMODEN LAS CARDS DE ARRIBA A ABAJO */}
-        {isDesktop ? (
+{/*         {isDesktop ? (
           <div className="row g-0">
             <div className="col-md-6">
               <div className="card-body">
@@ -168,8 +168,8 @@ const Sociales = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 };

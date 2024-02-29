@@ -46,14 +46,14 @@ const textoGrande = classNames({
           <h1 className={subTituloServicio}>Eventos Corporativos</h1>
           Ofrecemos soluciones integrales para eventos empresariales,
           adaptándonos a cada necesidad con propuestas de calidad en coffee
-          breaks, almuerzos de trabajo, capacitaciones y más. <br /><br />Desarrollamos
+          breaks, almuerzos de trabajo, capacitaciones y más. <br /><br />{/* Desarrollamos
           menús personalizados y estamos disponibles para resolver urgencias,
-          garantizando un servicio excepcional en momentos críticos..
-          {isDesktop?(<img
+          garantizando un servicio excepcional en momentos críticos.. */}
+          {/* {isDesktop?(<img
               src="https://res.cloudinary.com/dtfp8liuv/image/upload/v1708023537/El%20buen%20gusto/28753971_590748827924118_1006629377997275136_n_w4nf7m.jpg"
               className={style.imgFlota}
               alt="..."
-            ></img>):("")}
+            ></img>):("")} */}
         </div>
         <div className="col-md-6">
           <video width="390" height="640" controls autoplay className={reels}>
@@ -66,7 +66,7 @@ const textoGrande = classNames({
         </div>
       </div>
       <hr></hr>
-      <div className="card  mb-5">
+      {/* <div className="card  mb-5">
         <div className="row g-0">
           <div className="col-md-6">
             <img
@@ -92,9 +92,9 @@ const textoGrande = classNames({
             </div>
           </div>
         </div>
-      </div>
-      <div className="card mb-5">
+      </div> */}
         {/* PARA VER SI ES EN CEL QUE SE ACOMODEN LAS CARDS DE ARRIBA A ABAJO */}
+      {/* <div className="card mb-5">
         {isDesktop ? (
           <div className="row g-0">
             <div className="col-md-6">
@@ -172,7 +172,7 @@ const textoGrande = classNames({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

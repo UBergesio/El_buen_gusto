@@ -43,7 +43,7 @@ width: 100%;
 .logo {
   height: 2em;
   width: 2em;
-  margin-right: 0.5em;
+  margin-right: 4em;
   animation: moverDesdeArriba 2s forwards;
 }
 

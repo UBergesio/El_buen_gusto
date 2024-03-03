@@ -1,13 +1,14 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useMediaQuery } from "@react-hook/media-query";
 import style from "./Navbar.module.css";
 
 //LIBRERIAS
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { useState } from "react"; // Importa useState para manejar el estado del menú desplegable
 
 const Navbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar si el menú está abierto o cerrado
 
   const navClasses = classNames(
     "navbar",
@@ -17,6 +18,20 @@ const Navbar = () => {
       [style.backgroundCel]: !isDesktop,
     }
   );
+
+  const handleLinkClick = () => {
+    if (!isDesktop) {
+      // Si no es un escritorio, cierra el menú después de hacer clic en un enlace
+      setIsMenuOpen(false);
+    }
+  };
+
+  const handleDropdownClick = (e) => {
+    if (!isDesktop) {
+      // Si no es un escritorio, previene la propagación del evento para evitar que se cierre automáticamente
+      e.stopPropagation();
+    }
+  };
 
   return (
     <div>
@@ -49,12 +64,13 @@ const Navbar = () => {
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => setIsMenuOpen(!isMenuOpen)} // Cambia el estado del menú al hacer clic en el botón
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNavDropdown" onClick={() => setIsMenuOpen(false)}>
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <li className="nav-item" onClick={handleLinkClick}>
                 <a
                   className={`nav-link active text-light ${style.text}`}
                   aria-current="page"
@@ -63,15 +79,7 @@ const Navbar = () => {
                   <b>Nosotros</b>
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link active text-light ${style.text}`}
-                  href="#valores"
-                >
-                  <b>Valores</b>
-                </a>
-              </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={handleLinkClick}>
                 <a
                   className={`nav-link active text-light ${style.text}`}
                   href="#contacto"
@@ -89,13 +97,14 @@ const Navbar = () => {
                   </a>
                 ) : null}
               </div>
-              <li className={`nav-item dropdown ${style.disntacias}`}>
+              <li className={`nav-item dropdown ${style.disntacias}`} onClick={handleLinkClick}>
                 <a
                   className={`nav-link dropdown-toggle text-light ${style.text}`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  onClick={handleDropdownClick} // Evita que se cierre automáticamente en dispositivos móviles
                 >
                   <b>Servicios</b>
                 </a>
